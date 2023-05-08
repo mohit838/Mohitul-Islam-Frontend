@@ -12,9 +12,7 @@ import Footer from "../../components/footer/FooterAnimation";
 import useDocumentTitle from "../../components/useDocumentTitle";
 
 const HomeOne = () => {
-  useDocumentTitle(
-    "Nairo || Theme Dark Animation React Personal Portfolio Template"
-  );
+  useDocumentTitle("Mohammad Mohitul Islam || Personal Portfolio");
   return (
     <div className="main-left theme-dark">
       <Header />

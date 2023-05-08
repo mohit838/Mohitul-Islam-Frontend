@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 // useDocumentTitle.js
 import { useRef, useEffect } from "react";
 
