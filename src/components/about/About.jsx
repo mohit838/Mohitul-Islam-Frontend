@@ -22,7 +22,7 @@ const About = () => {
                 {/* End img */}
                 <div className="info">
                   <p>Ux/Ui Designer</p>
-                  <h3>Nairobi Gadot</h3>
+                  <h3>Mohammad Mohitul Islam</h3>
                 </div>
                 {/* End info */}
               </div>
@@ -37,16 +37,16 @@ const About = () => {
                 </div>
                 <div className="about-text">
                   <p>
-                    I'm a Freelancer Front-end Developer with over 3 years of
-                    experience. I'm from San Francisco. I code and create web
-                    elements for amazing people around the world. I like work
-                    with new people. New people new Experiences.
+                    I'm a Freelancer Front-end Developer with over 1 years of
+                    experience. I'm from Dhaka, Bangladesh. I code and create
+                    web elements for amazing people around the world. I like
+                    work with new people. New people new Experiences.
                   </p>
                   <p>
-                    I'm a Freelancer Front-end Developer with over 3 years of
-                    experience. I'm from San Francisco. I code and create web
-                    elements for amazing people around the world. I like work
-                    with new people. New people new Experiences.
+                    I'm a Freelancer Front-end Developer with over 1 years of
+                    experience. I'm from Dhaka, Bangladesh. I code and create
+                    web elements for amazing people around the world. I like
+                    work with new people. New people new Experiences.
                   </p>
                 </div>
                 <div className="info-list">
@@ -55,19 +55,19 @@ const About = () => {
                       <ul>
                         <li>
                           <label>Name: </label>
-                          <span>Nairobi Gadot</span>
+                          <span>Mohammad Mohitul Islam</span>
                         </li>
                         <li>
                           <label>Birthday: </label>
-                          <span>4th April 1994</span>
+                          <span>2th March 1994</span>
                         </li>
                         <li>
                           <label>Age: </label>
-                          <span>26 years</span>
+                          <span>29 years</span>
                         </li>
                         <li>
                           <label>Address: </label>
-                          <span>San Francisco</span>
+                          <span>Dhaka, Bangladesh</span>
                         </li>
                       </ul>
                     </div>
