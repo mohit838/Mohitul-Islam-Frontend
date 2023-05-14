@@ -1,39 +1,16 @@
-# Nairo React Personal Portfolio Template
+# Mohit's Protfolio Site
 
-## Description
+    React
+    Node
+    Mongo
+    Prisma
 
-Setup Procedure
+# Deployment Process are
 
-## Project setup
+    Docker
+    VPS Server
+    nginx
 
-```
-npm install
-```
+## \*\*Disclaimer
 
-or
-
-```
-npm install --legacy-peer-deps
-```
-
-### Compiles and hot-reloads for development
-
-```
-npm run start
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration (vue-cli)
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+> Client Side design are provided from Free Themeforest Theme of the Month (April)
