@@ -25,8 +25,8 @@ const AboutThree = () => {
                 </div>
                 {/* End img */}
                 <div className="info">
-                  <p>Ux/Ui Designer</p>
-                  <h3>John Smith</h3>
+                  <p>Software Developer</p>
+                  <h3>Mohitul Islam</h3>
                 </div>
                 {/* End info */}
               </div>
@@ -64,19 +64,19 @@ const AboutThree = () => {
                       <ul>
                         <li>
                           <label>Name: </label>
-                          <span>Nairobi Gadot</span>
+                          <span>Mohammad Mohitul Islam</span>
                         </li>
                         <li>
                           <label>Birthday: </label>
-                          <span>4th April 1994</span>
+                          <span>3th March 1994</span>
                         </li>
                         <li>
                           <label>Age: </label>
-                          <span>26 years</span>
+                          <span>29 years</span>
                         </li>
                         <li>
                           <label>Address: </label>
-                          <span>San Francisco</span>
+                          <span>Dhaka, Bangladesh</span>
                         </li>
                       </ul>
                     </div>
@@ -88,11 +88,11 @@ const AboutThree = () => {
                         </li>
                         <li>
                           <label>Email: </label>
-                          <span>info@domainname.com</span>
+                          <span>mohitul449@gmail.com</span>
                         </li>
                         <li>
                           <label>Skype: </label>
-                          <span>nairob.40</span>
+                          <span>live:mohitul838_1</span>
                         </li>
                         <li>
                           <label>Freelance: </label>

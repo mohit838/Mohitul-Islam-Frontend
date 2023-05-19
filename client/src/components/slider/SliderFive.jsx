@@ -2,7 +2,7 @@ import React from "react";
 import TextLoop from "react-text-loop";
 
 const sliderContent = {
-  name: "Mark Saverin",
+  name: "Mohitul Islam",
   description: `I design and develop services for customers of all sizes,
   specializing in creating stylish, modern websites, web
   services and online stores.`,
@@ -25,8 +25,8 @@ const SliderFive = () => {
                 <h6>Hello there...</h6>
                 <h1 className="font-alt">{sliderContent.name}</h1>
                 <TextLoop>
-                  <p className="loop-text lead"> Content Writter</p>
-                  <p className="loop-text lead">Businessman</p>
+                  <p className="loop-text lead">Software Developer</p>
+                  <p className="loop-text lead">Designer</p>
                   <p className="loop-text lead">Photographer</p>
                 </TextLoop>{" "}
                 <p className="desc">{sliderContent.description}</p>
