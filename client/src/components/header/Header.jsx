@@ -9,6 +9,7 @@ import {
   FiPhoneOutgoing,
 } from "react-icons/fi";
 import { FaHome, FaBlog } from "react-icons/fa";
+import { arrOfNavMenus, arrOfNavMenusLinks } from "../../data/data";
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -40,14 +41,14 @@ const Header = () => {
 
           <Scrollspy
             className="nav nav-menu"
-            items={["home", "about", "resume", "work", "blog", "contactus"]}
+            items={arrOfNavMenus}
             currentClassName="active"
             offset={-30}
           >
             <li>
               <a
                 className="nav-link "
-                href="#home"
+                href={`#${arrOfNavMenusLinks?.home}`}
                 data-tip
                 data-for="HOME"
                 onClick={handleClick}
@@ -66,7 +67,7 @@ const Header = () => {
             <li>
               <a
                 className="nav-link"
-                href="#about"
+                href={`#${arrOfNavMenusLinks?.about}`}
                 data-tip
                 data-for="ABOUT"
                 onClick={handleClick}
@@ -85,7 +86,7 @@ const Header = () => {
             <li>
               <a
                 className="nav-link"
-                href="#resume"
+                href={`#${arrOfNavMenusLinks?.resume}`}
                 data-tip
                 data-for="RESUME"
                 onClick={handleClick}
@@ -104,7 +105,7 @@ const Header = () => {
             <li>
               <a
                 className="nav-link"
-                href="#work"
+                href={`#${arrOfNavMenusLinks?.work}`}
                 data-tip
                 data-for="WORK"
                 onClick={handleClick}
@@ -123,7 +124,7 @@ const Header = () => {
             <li>
               <a
                 className="nav-link"
-                href="#blog"
+                href={`#${arrOfNavMenusLinks?.blog}`}
                 data-tip
                 data-for="BLOG"
                 onClick={handleClick}
@@ -142,7 +143,7 @@ const Header = () => {
             <li>
               <a
                 className="nav-link"
-                href="#contactus"
+                href={`#${arrOfNavMenusLinks?.contactus}`}
                 data-tip
                 data-for="CONTACT"
                 onClick={handleClick}
