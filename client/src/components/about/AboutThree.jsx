@@ -3,6 +3,7 @@ import Social from "../Social";
 import Testimonials from "../testimonial/TestimonialAnimation";
 import Services from "../service/ServiceAnimation";
 import Awards from "../award/AwardsAnimation";
+import { aboutImg, aboutInfo, biographyInfo } from "../../data/data";
 
 const AboutThree = () => {
   return (
@@ -18,15 +19,18 @@ const AboutThree = () => {
               <div className="about-me">
                 <div className="img">
                   <div className="img-in">
-                    <img src="img/about/about-me-3.jpg" alt="about" />
+                    <img
+                      src={`${aboutImg?.imgSrc}`}
+                      alt={`${aboutImg?.altTag}`}
+                    />
                   </div>
                   <Social />
                   {/* End social icon */}
                 </div>
                 {/* End img */}
                 <div className="info">
-                  <p>Software Developer</p>
-                  <h3>Mohitul Islam</h3>
+                  <p>{aboutInfo?.infoTitle}</p>
+                  <h3>{aboutInfo?.infoName}</h3>
                 </div>
                 {/* End info */}
               </div>
@@ -42,21 +46,12 @@ const AboutThree = () => {
             >
               <div className="about-info">
                 <div className="title">
-                  <h3>Biography</h3>
+                  <h3>{biographyInfo?.secTitle}</h3>
                 </div>
                 <div className="about-text">
-                  <p>
-                    I'm a Freelancer Front-end Developer with over 3 years of
-                    experience. I'm from San Francisco. I code and create web
-                    elements for amazing people around the world. I like work
-                    with new people. New people new Experiences.
-                  </p>
-                  <p>
-                    I'm a Freelancer Front-end Developer with over 3 years of
-                    experience. I'm from San Francisco. I code and create web
-                    elements for amazing people around the world. I like work
-                    with new people. New people new Experiences.
-                  </p>
+                  {biographyInfo?.bioInfo?.map((bInfo) => (
+                    <p key={bInfo?.id}>{bInfo?.text}</p>
+                  ))}
                 </div>
                 <div className="info-list">
                   <div className="row">
