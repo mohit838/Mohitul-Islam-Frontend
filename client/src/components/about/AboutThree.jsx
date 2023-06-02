@@ -3,7 +3,12 @@ import Social from "../Social";
 import Testimonials from "../testimonial/TestimonialAnimation";
 import Services from "../service/ServiceAnimation";
 import Awards from "../award/AwardsAnimation";
-import { aboutImg, aboutInfo, biographyInfo } from "../../data/data";
+import {
+  aboutImg,
+  aboutInfo,
+  biographyInfo,
+  personalInfo,
+} from "../../data/data";
 
 const AboutThree = () => {
   return (
@@ -57,42 +62,22 @@ const AboutThree = () => {
                   <div className="row">
                     <div className="col-sm-6">
                       <ul>
-                        <li>
-                          <label>Name: </label>
-                          <span>Mohammad Mohitul Islam</span>
-                        </li>
-                        <li>
-                          <label>Birthday: </label>
-                          <span>3th March 1994</span>
-                        </li>
-                        <li>
-                          <label>Age: </label>
-                          <span>29 years</span>
-                        </li>
-                        <li>
-                          <label>Address: </label>
-                          <span>Dhaka, Bangladesh</span>
-                        </li>
+                        {personalInfo?.pInfos1?.map((pInfo1) => (
+                          <li key={pInfo1?.id}>
+                            <label>{pInfo1?.label}:</label>
+                            <span>{pInfo1?.name}</span>
+                          </li>
+                        ))}
                       </ul>
                     </div>
                     <div className="col-sm-6">
                       <ul>
-                        <li>
-                          <label>Phone: </label>
-                          <span>(+38) 469 2344 2364</span>
-                        </li>
-                        <li>
-                          <label>Email: </label>
-                          <span>mohitul449@gmail.com</span>
-                        </li>
-                        <li>
-                          <label>Skype: </label>
-                          <span>live:mohitul838_1</span>
-                        </li>
-                        <li>
-                          <label>Freelance: </label>
-                          <span>Available</span>
-                        </li>
+                        {personalInfo?.pInfos2?.map((pInfo2) => (
+                          <li key={pInfo2?.id}>
+                            <label>{pInfo2?.label}:</label>
+                            <span>{pInfo2?.name}</span>
+                          </li>
+                        ))}
                       </ul>
                     </div>
                   </div>

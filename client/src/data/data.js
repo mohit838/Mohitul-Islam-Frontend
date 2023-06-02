@@ -81,3 +81,50 @@ export const biographyInfo = {
     },
   ],
 };
+
+export const personalInfo = {
+  pInfos1: [
+    {
+      id: 1,
+      label: "Name",
+      name: "Mohammad Mohitul Islam",
+    },
+    {
+      id: 2,
+      label: "Birthday",
+      name: "3th March 1994",
+    },
+    {
+      id: 3,
+      label: "Age",
+      name: "29 years",
+    },
+    {
+      id: 4,
+      label: "Address",
+      name: "Dhaka, Bangladesh",
+    },
+  ],
+  pInfos2: [
+    {
+      id: 1,
+      label: "Phone",
+      name: "(+38) 469 2344 2364",
+    },
+    {
+      id: 2,
+      label: "Email",
+      name: "mohitul449@gmail.com",
+    },
+    {
+      id: 3,
+      label: "Skype",
+      name: "live:mohitul838_1",
+    },
+    {
+      id: 4,
+      label: "Freelance",
+      name: "Available",
+    },
+  ],
+};
