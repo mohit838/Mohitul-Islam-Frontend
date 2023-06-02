@@ -128,3 +128,78 @@ export const personalInfo = {
     },
   ],
 };
+
+export const ServiceContent = [
+  {
+    icon: "icon-mobile",
+    title: "Web Design",
+    descriptions: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    delayAnimation: "",
+  },
+  {
+    icon: "icon-desktop",
+    title: "Web Development",
+    descriptions: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    delayAnimation: "200",
+  },
+  {
+    icon: "icon-target",
+    title: "Seo Marketing",
+    descriptions: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    delayAnimation: "400",
+  },
+];
+
+export const AwardContnet = [
+  {
+    img: "a1",
+    awardName: "Creative Designer",
+    awardFor: "Site of the day",
+    delayAnimation: "0",
+  },
+  {
+    img: "a2",
+    awardName: "Yearly Best Performer",
+    awardFor: "Site of the day",
+    delayAnimation: "200",
+  },
+  {
+    img: "a3",
+    awardName: "Best Learner Award",
+    awardFor: "Site of the day",
+    delayAnimation: "400",
+  },
+];
+
+export const TestimonilContent = [
+  {
+    imageName: "team-1",
+    desc: `  Lorem Ipsum is simply dummy text of the printing and
+    typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s.`,
+    reviewerName: "Nancy Byers",
+    designation: "CEO at ib-themes",
+    delayAnimation: "",
+  },
+  {
+    imageName: "team-2",
+    desc: ` Lorem Ipsum is simply dummy text of the printing and
+    typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s.`,
+    reviewerName: "Jara Afsari",
+    designation: "CEO at ib-themes",
+    delayAnimation: "200",
+  },
+  {
+    imageName: "team-4",
+    desc: ` Lorem Ipsum is simply dummy text of the printing and
+    typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s.`,
+    reviewerName: "Janiaya kiaram",
+    designation: "Visual Designer",
+    delayAnimation: "400",
+  },
+];

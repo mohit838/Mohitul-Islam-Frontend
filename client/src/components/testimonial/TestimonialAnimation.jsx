@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function SimpleSlider() {
+export default function SimpleSlider({ TestimonilContent }) {
   const settings = {
     dots: true,
     arrow: false,
@@ -28,36 +28,6 @@ export default function SimpleSlider() {
       },
     ],
   };
-
-  const TestimonilContent = [
-    {
-      imageName: "team-1",
-      desc: `  Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s.`,
-      reviewerName: "Nancy Byers",
-      designation: "CEO at ib-themes",
-      delayAnimation: "",
-    },
-    {
-      imageName: "team-2",
-      desc: ` Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s.`,
-      reviewerName: "Jara Afsari",
-      designation: "CEO at ib-themes",
-      delayAnimation: "200",
-    },
-    {
-      imageName: "team-4",
-      desc: ` Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s.`,
-      reviewerName: "Janiaya kiaram",
-      designation: "Visual Designer",
-      delayAnimation: "400",
-    },
-  ];
 
   return (
     <div className="testimonial-wrapper">

@@ -1,33 +1,10 @@
 import React from "react";
 
-const ServiceContent = [
-  {
-    icon: "icon-mobile",
-    title: "Web Design",
-    descriptions: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    delayAnimation: "",
-  },
-  {
-    icon: "icon-desktop",
-    title: "Web Development",
-    descriptions: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    delayAnimation: "200",
-  },
-  {
-    icon: "icon-target",
-    title: "Seo Marketing",
-    descriptions: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    delayAnimation: "400",
-  },
-];
-export default function Service() {
+export default function Service({ServiceContent}) {
   return (
     <>
       <div className="row">
-        {ServiceContent.map((val, i) => (
+        {ServiceContent?.map((val, i) => (
           <div
             className="col-md-6 col-lg-4 my-3"
             key={i}

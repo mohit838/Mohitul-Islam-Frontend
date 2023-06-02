@@ -1,27 +1,6 @@
 import React from "react";
 
-const AwardContnet = [
-  {
-    img: "a1",
-    awardName: "Creative Designer",
-    awardFor: "Site of the day",
-    delayAnimation: "0",
-  },
-  {
-    img: "a2",
-    awardName: "Yearly Best Performer",
-    awardFor: "Site of the day",
-    delayAnimation: "200",
-  },
-  {
-    img: "a3",
-    awardName: "Best Learner Award",
-    awardFor: "Site of the day",
-    delayAnimation: "400",
-  },
-];
-
-const Awards = () => {
+const Awards = ({ AwardContnet }) => {
   return (
     <>
       <div className="row">

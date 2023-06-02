@@ -4,6 +4,9 @@ import Testimonials from "../testimonial/TestimonialAnimation";
 import Services from "../service/ServiceAnimation";
 import Awards from "../award/AwardsAnimation";
 import {
+  AwardContnet,
+  ServiceContent,
+  TestimonilContent,
   aboutImg,
   aboutInfo,
   biographyInfo,
@@ -100,7 +103,7 @@ const AboutThree = () => {
           <div className="title">
             <h3>What I do?</h3>
           </div>
-          <Services />
+          <Services ServiceContent={ServiceContent} />
           {/* End .row */}
 
           {/* separated */}
@@ -117,7 +120,7 @@ const AboutThree = () => {
           <div className="title">
             <h3>Awards.</h3>
           </div>
-          <Awards />
+          <Awards AwardContnet={AwardContnet} />
           {/* End Awards */}
 
           {/* separated */}
@@ -134,7 +137,7 @@ const AboutThree = () => {
           <div className="title">
             <h3>Testimonials.</h3>
           </div>
-          <Testimonials />
+          <Testimonials TestimonilContent={TestimonilContent} />
           {/* End Testimonaial */}
         </div>
       </section>
