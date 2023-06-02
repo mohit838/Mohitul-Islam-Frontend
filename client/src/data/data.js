@@ -1,3 +1,7 @@
+export const logo = {
+  name: "M",
+};
+
 export const arrOfNavMenus = [
   "home",
   "about",
@@ -26,7 +30,6 @@ export const sliderContent = {
 };
 
 export const sliderInfo = {
-  id: 1,
   smallHeadTitle: "Hello there...",
   loopText: [
     {

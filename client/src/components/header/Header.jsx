@@ -9,7 +9,7 @@ import {
   FiPhoneOutgoing,
 } from "react-icons/fi";
 import { FaHome, FaBlog } from "react-icons/fa";
-import { arrOfNavMenus, arrOfNavMenusLinks } from "../../data/data";
+import { arrOfNavMenus, arrOfNavMenusLinks, logo } from "../../data/data";
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -34,7 +34,7 @@ const Header = () => {
         <div className="scroll-bar">
           <div className="hl-top">
             <div className="hl-logo">
-              <Link to="/">N</Link>
+              <Link to="/">{logo?.name}</Link>
             </div>
           </div>
           {/* End htl-top */}
@@ -45,6 +45,7 @@ const Header = () => {
             currentClassName="active"
             offset={-30}
           >
+            {/* TODO: Need data-for and id in Uppercase Letter */}
             <li>
               <a
                 className="nav-link "
@@ -60,7 +61,7 @@ const Header = () => {
                   type="dark"
                   effect="float"
                 >
-                  <span>Home</span>
+                  <span>{arrOfNavMenusLinks?.home}</span>
                 </ReactTooltip>
               </a>
             </li>
@@ -79,7 +80,7 @@ const Header = () => {
                   type="dark"
                   effect="float"
                 >
-                  <span>About</span>
+                  <span>{arrOfNavMenusLinks?.about}</span>
                 </ReactTooltip>
               </a>
             </li>
@@ -98,7 +99,7 @@ const Header = () => {
                   type="dark"
                   effect="float"
                 >
-                  <span>Resume</span>
+                  <span>{arrOfNavMenusLinks?.resume}</span>
                 </ReactTooltip>
               </a>
             </li>
@@ -117,7 +118,7 @@ const Header = () => {
                   type="dark"
                   effect="float"
                 >
-                  <span>Work</span>
+                  <span>{arrOfNavMenusLinks?.work}</span>
                 </ReactTooltip>
               </a>
             </li>
@@ -136,7 +137,7 @@ const Header = () => {
                   type="dark"
                   effect="float"
                 >
-                  <span>Blog</span>
+                  <span>{arrOfNavMenusLinks?.blog}</span>
                 </ReactTooltip>
               </a>
             </li>
@@ -155,7 +156,7 @@ const Header = () => {
                   type="dark"
                   effect="float"
                 >
-                  <span>Contact</span>
+                  <span>{arrOfNavMenusLinks?.contactus}</span>
                 </ReactTooltip>
               </a>
             </li>
