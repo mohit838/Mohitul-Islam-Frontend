@@ -5,6 +5,10 @@
     Mongo
     Prisma
 
+# How to Update This Project
+
+    npm install react@latest react-dom@latest
+
 # Deployment Process are
 
     Docker
