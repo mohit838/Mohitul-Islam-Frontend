@@ -12,6 +12,7 @@
   --font-size-base: 1rem;
   --title-font-size: 1.5rem;
   --line-height-base: 1.5;
+  --font-bold: 700;
 }
 
 html {
@@ -69,12 +70,26 @@ a {
   object-fit: cover;
 }
 
-.actionBtn {
+.actionBtnReg {
   background: var(--primary-color);
   color: #fff;
+  font-weight: var(--font-bold);
+  font-family: var(--body-fonts);
 
   &:hover {
     background: var(--secondary-color);
     color: var(--primary-color);
+  }
+}
+
+.actionBtnDiff {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: var(--font-bold);
+  font-family: var(--body-fonts);
+
+  &:hover {
+    background: var(--primary-color);
+    color: #fff;
   }
 }

@@ -38,7 +38,7 @@ const HeroContent = () => {
         {/* Contact and Work Button */}
         <div className="flex flex-wrap items-start justify-between gap-7">
           {actionBtn?.map((btn) => (
-            <Button key={btn?.id}>
+            <Button key={btn?.id} type={btn?.type}>
               <a href={`${btn?.link}`}>{btn?.btnName}</a>
             </Button>
           ))}
@@ -57,6 +57,6 @@ const profileImg = {
 };
 
 const actionBtn = [
-  { id: 1, btnName: 'Contact Me', link: '/' },
-  { id: 2, btnName: 'Check My Work', link: '/' },
+  { id: 1, btnName: 'Contact Me', link: '/', type: 'reg' },
+  { id: 2, btnName: 'Check My Work', link: '/', type: 'diff' },
 ];
