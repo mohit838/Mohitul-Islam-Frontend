@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  margin: 0;
+  padding: 0;
+  --primary-color: #040507;
+  --secondary-color: #f7ad36;
+  --body-fonts: 'Montserrat', sans-serif;
+  --title-fonts: 'Merienda', cursive;
+  --font-size-base: 1rem;
+  --title-font-size: 1.5rem;
+  --line-height-base: 1.5;
+}
+
+html {
+  font-family: var(--body-fonts);
+  font-size: var(--font-size-base);
+}
+
+body {
+  font-family: var(--body-fonts);
+  font-size: var(--font-size-base);
+}
+
+h1 {
+  font-family: var(--title-fonts);
+  font-size: var(--title-font-size);
+}
