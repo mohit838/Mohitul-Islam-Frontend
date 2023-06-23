@@ -54,22 +54,6 @@ a {
 }
 
 /* Profile Image Responsiveness */
-/* .image-container {
-  width: 100%;
-
-  > div {
-    position: unset !important;
-  }
-
-  .image {
-    object-fit: contain;
-    width: 100% !important;
-    position: relative !important;
-    height: unset !important;
-  }
-} */
-
-/* styles.css */
 .fixed-ratio-container {
   position: relative;
   width: 200%;
@@ -83,4 +67,14 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.actionBtn {
+  background: var(--primary-color);
+  color: #fff;
+
+  &:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+  }
 }

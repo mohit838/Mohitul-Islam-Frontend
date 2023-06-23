@@ -5,33 +5,6 @@ const HeroContent = () => {
   return (
     <div className="flex flex-nowrap items-center justify-center gap-7 mt-10">
       {/* Profile Image */}
-      {/* Test 1 */}
-      {/* <div className="">
-        <div className={'image-container'}>
-          <Image
-            src={`${profileImg?.imgSrc}`}
-            alt="mohitul-islam"
-            fill
-            priority
-            className={'image'}
-          />
-        </div>
-      </div> */}
-
-      {/* Test 2 */}
-      {/* <div className="w-[2000px] h-auto">
-        <div className={'image-container'}>
-          <Image
-            src={`${profileImg?.imgSrc}`}
-            alt="mohitul-islam"
-            fill
-            priority
-            className={'image'}
-          />
-        </div>
-      </div> */}
-
-      {/* Test  */}
       <div className="fixed-ratio-container">
         <Image
           src={`${profileImg?.imgSrc}`}
@@ -41,6 +14,7 @@ const HeroContent = () => {
           priority
         />
       </div>
+
       {/* Profile Info */}
       <div className="flex flex-col items-start justify-between gap-5">
         <h1 className="font-merienda text-4xl leading-[1.5] tracking-[1.5px]">
@@ -62,7 +36,6 @@ const HeroContent = () => {
         </p>
 
         {/* Contact and Work Button */}
-
         <div className="flex flex-wrap items-start justify-between gap-7">
           {actionBtn?.map((btn) => (
             <Button key={btn?.id}>
