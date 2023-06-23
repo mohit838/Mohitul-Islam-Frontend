@@ -9,7 +9,7 @@ const Navbar = () => {
       </div>
 
       {/* Navbar */}
-      <div className="">
+      <div className="max-sm:hidden md:hidden lg:block">
         <nav>
           <ul className="flex items-center justify-between gap-5">
             {menuItems?.map((item) => (
@@ -101,6 +101,26 @@ const Navbar = () => {
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                   <rect x="2" y="9" width="4" height="12"></rect>
                   <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </li>
+
+            {/* Mobile and Tablet Menu */}
+            <li className="defaultTextlinkColor sm:block md:block lg:hidden">
+              <a href="#" className="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                  />
                 </svg>
               </a>
             </li>

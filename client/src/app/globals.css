@@ -44,52 +44,59 @@ a {
   text-decoration: none;
 }
 
-.menuLinks > a:hover {
-  color: var(--primary-color);
-  background: var(--secondary-color);
-}
-
-.defaultTextlinkColor > a:hover {
-  color: var(--secondary-color);
-  transition: all 0.3s ease-out;
-}
-
-/* Profile Image Responsiveness */
-.fixed-ratio-container {
-  position: relative;
-  width: 200%;
-  padding-bottom: 50%;
-}
-
-.fixed-ratio-container img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.actionBtnReg {
-  background: var(--primary-color);
-  color: #fff;
-  font-weight: var(--font-bold);
-  font-family: var(--body-fonts);
-
-  &:hover {
-    background: var(--secondary-color);
+@layer base {
+  .menuLinks > a:hover {
     color: var(--primary-color);
+    background: var(--secondary-color);
   }
-}
 
-.actionBtnDiff {
-  background: var(--secondary-color);
-  color: var(--primary-color);
-  font-weight: var(--font-bold);
-  font-family: var(--body-fonts);
+  .defaultTextlinkColor > a:hover {
+    color: var(--secondary-color);
+    transition: all 0.3s ease-out;
+  }
 
-  &:hover {
+  /* Profile Image Responsiveness */
+  .fixed-ratio-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    @apply md:pb-[40%];
+    @apply lg:pb-[40%];
+    @apply lg:w-[60%];
+  }
+
+  .fixed-ratio-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+
+  .actionBtnReg {
     background: var(--primary-color);
     color: #fff;
+    font-weight: var(--font-bold);
+    font-family: var(--body-fonts);
+
+    &:hover {
+      background: var(--secondary-color);
+      color: var(--primary-color);
+    }
+  }
+
+  .actionBtnDiff {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: var(--font-bold);
+    font-family: var(--body-fonts);
+
+    &:hover {
+      background: var(--primary-color);
+      color: #fff;
+    }
   }
 }
