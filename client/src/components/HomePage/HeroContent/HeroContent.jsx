@@ -52,6 +52,8 @@ export default HeroContent;
 
 const profileImg = {
   imgSrc: '/profile/mohit.jpeg',
+  imgSrc2: '/profile/protfolio1.jpg',
+  imgSrc3: '/profile/protfolio2.png',
 };
 
 const actionBtn = [
