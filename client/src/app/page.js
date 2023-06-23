@@ -1,11 +1,11 @@
 import ContainerWrapper from '@/components/Common/ContainerWrappers/ContainerWrapper';
-import HeroSection from '@/components/HeroSection/HeroSection';
+import HomePage from '@/components/HomePage/HomePage';
 
 export default function Home() {
   return (
     <main>
       <ContainerWrapper>
-        <HeroSection />
+        <HomePage />
       </ContainerWrapper>
     </main>
   );
