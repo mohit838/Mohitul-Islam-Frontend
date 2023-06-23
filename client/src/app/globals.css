@@ -28,3 +28,43 @@ h1 {
   font-family: var(--title-fonts);
   font-size: var(--title-font-size);
 }
+
+p {
+  font-family: var(--body-fonts);
+  font-size: var(--font-size-base);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menuLinks > a:hover {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
+
+.defaultTextlinkColor > a:hover {
+  color: var(--secondary-color);
+  transition: all 0.3s ease-out;
+}
+
+/* Profile Image Responsiveness */
+.image-container {
+  width: 100%;
+
+  > div {
+    position: unset !important;
+  }
+
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
