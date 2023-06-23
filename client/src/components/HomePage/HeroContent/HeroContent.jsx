@@ -5,6 +5,7 @@ const HeroContent = () => {
   return (
     <div className="flex flex-nowrap items-center justify-center gap-7 mt-10">
       {/* Profile Image */}
+      {/* Test 1 */}
       {/* <div className="">
         <div className={'image-container'}>
           <Image
@@ -17,7 +18,8 @@ const HeroContent = () => {
         </div>
       </div> */}
 
-      <div className="w-[2000px] h-auto">
+      {/* Test 2 */}
+      {/* <div className="w-[2000px] h-auto">
         <div className={'image-container'}>
           <Image
             src={`${profileImg?.imgSrc}`}
@@ -27,8 +29,18 @@ const HeroContent = () => {
             className={'image'}
           />
         </div>
-      </div>
+      </div> */}
 
+      {/* Test  */}
+      <div className="fixed-ratio-container">
+        <Image
+          src={`${profileImg?.imgSrc}`}
+          alt="mohitul-islam"
+          fill
+          responsive
+          priority
+        />
+      </div>
       {/* Profile Info */}
       <div className="flex flex-col items-start justify-between gap-5">
         <h1 className="font-merienda text-4xl leading-[1.5] tracking-[1.5px]">
