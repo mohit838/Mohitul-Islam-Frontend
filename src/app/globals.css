@@ -84,6 +84,30 @@ a {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   }
 
+  .fixed-ratio-container-work {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    @apply md:pb-[90%];
+    @apply lg:pb-[80%];
+    @apply lg:w-[100%];
+    /* @apply landscape:max-sm:pb-[54%]; */
+    /* @apply landscape:max-sm:w-[145%]; */
+    /* @apply landscape:max-md:pb-[54%]; */
+    /* @apply landscape:max-md:w-[145%]; */
+  }
+
+  .fixed-ratio-container-work img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+
   .actionBtnReg {
     background: var(--primary-color);
     color: #fff;
