@@ -1,6 +1,6 @@
 const Footer = () => {
   const year = new Date().getFullYear();
-  const devName = 'GhostRio Developer';
+  const devName = 'Ghost Developer';
 
   return (
     <footer className="">

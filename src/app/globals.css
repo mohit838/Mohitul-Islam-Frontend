@@ -88,13 +88,13 @@ a {
     position: relative;
     width: 100%;
     padding-bottom: 100%;
-    @apply md:pb-[40%];
+    @apply md:pb-[90%];
     @apply lg:pb-[80%];
     @apply lg:w-[100%];
-    @apply landscape:max-sm:pb-[54%];
-    @apply landscape:max-sm:w-[145%];
-    @apply landscape:max-md:pb-[54%];
-    @apply landscape:max-md:w-[145%];
+    /* @apply landscape:max-sm:pb-[54%]; */
+    /* @apply landscape:max-sm:w-[145%]; */
+    /* @apply landscape:max-md:pb-[54%]; */
+    /* @apply landscape:max-md:w-[145%]; */
   }
 
   .fixed-ratio-container-work img {

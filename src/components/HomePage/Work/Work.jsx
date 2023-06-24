@@ -13,7 +13,7 @@ const Work = () => {
       <SectionTitle title={'Work'} />
 
       {/* Main Work ShowCase Content */}
-      <div className="sm:mt-7 lg:mt-14">
+      <div className="sm:mt-7 lg:mt-5">
         <TabNavigation
           tabs={tabs.map((tab) => tab.name)}
           activeTab={activeTab}
