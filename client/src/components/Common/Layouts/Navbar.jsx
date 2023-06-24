@@ -10,7 +10,7 @@ const Navbar = ({ humburger, openMenu }) => {
         </div>
 
         {/* Navbar */}
-        <div className="max-sm:hidden md:hidden lg:block">
+        <div className="max-sm:hidden md:hidden landscape:max-md:hidden lg:block">
           <nav>
             <ul className="flex items-center justify-between gap-5">
               {menuItems?.map((item) => (
@@ -67,7 +67,7 @@ const Navbar = ({ humburger, openMenu }) => {
                   </svg>
                 </a>
               </li>
-              <li className="defaultTextlinkColor max-sm:hidden md:hidden lg:block">
+              <li className="defaultTextlinkColor max-sm:hidden md:hidden landscape:max-md:hidden lg:block">
                 <a href="#" className="">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@ const Navbar = ({ humburger, openMenu }) => {
                   </svg>
                 </a>
               </li>
-              <li className="defaultTextlinkColor max-sm:hidden md:hidden lg:block">
+              <li className="defaultTextlinkColor max-sm:hidden md:hidden landscape:max-md:hidden lg:block">
                 <a href="#" className="">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +140,7 @@ const Navbar = ({ humburger, openMenu }) => {
           <div className="sm:block md:block lg:hidden">
             {/* Mobile and Tablet Menu */}
 
-            <div className="mt-[30%]">
+            <div className="mt-[30%] landscape:sm:mt-5">
               {/* Close Btn */}
               <span
                 className="defaultTextlinkColor flex items-end justify-center mb-5"

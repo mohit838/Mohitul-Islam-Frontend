@@ -1,22 +1,31 @@
 import Button from '@/components/Common/Buttons/Button';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const HeroContent = () => {
+  const motionOp = {
+    initial: { x: '-100%', opacity: '0' },
+    whileInView: { x: '0', opacity: '1' },
+  };
+
   return (
     <div className="flex max-sm:flex-col md:flex-row lg:flex-row items-center justify-center sm:gap-5 lg:gap-7 sm:my-5 lg:my-10">
       {/* Profile Image */}
-      <div className="fixed-ratio-container">
+      <motion.div {...motionOp} className="fixed-ratio-container">
         <Image
           src={`${profileImg?.imgSrc}`}
           alt="mohitul-islam"
           fill
-          responsive
+          responsive="true"
           priority
         />
-      </div>
+      </motion.div>
 
       {/* Profile Info */}
-      <div className="flex flex-col items-start justify-between gap-5">
+      <motion.div
+        {...motionOp}
+        className="flex flex-col items-start justify-between gap-5"
+      >
         <h1 className="font-merienda sm:text-[1.4rem] lg:text-4xl sm:leading-[1.5] lg:leading-[1.5] tracking-[1.5px]">
           Hi, I'm Mohitul Islam <br />
           and
@@ -39,7 +48,7 @@ const HeroContent = () => {
             </Button>
           ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

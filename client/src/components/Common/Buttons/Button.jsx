@@ -1,12 +1,17 @@
+import { motion } from 'framer-motion';
+
 const Button = ({ children, type }) => {
   return (
-    <button
+    <motion.button
       className={`px-4 py-2 ${
         type === 'diff' ? 'actionBtnDiff' : 'actionBtnReg'
       }`}
+      whileTap={{
+        scale: '1.2',
+      }}
     >
       {children}
-    </button>
+    </motion.button>
   );
 };
 

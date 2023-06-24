@@ -63,6 +63,10 @@ a {
     @apply md:pb-[40%];
     @apply lg:pb-[40%];
     @apply lg:w-[60%];
+    @apply landscape:max-sm:pb-[54%];
+    @apply landscape:max-sm:w-[145%];
+    @apply landscape:max-md:pb-[54%];
+    @apply landscape:max-md:w-[145%];
   }
 
   .fixed-ratio-container img {
@@ -106,5 +110,4 @@ a {
     font-family: var(--title-fonts);
     text-align: center;
   }
-  
 }
