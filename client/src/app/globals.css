@@ -99,4 +99,12 @@ a {
       color: #fff;
     }
   }
+
+  .sectionTitle {
+    font-size: 40px;
+    font-weight: var(--font-bold);
+    font-family: var(--title-fonts);
+    text-align: center;
+  }
+  
 }

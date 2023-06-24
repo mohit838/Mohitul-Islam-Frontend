@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const HeroContent = () => {
   return (
-    <div className="flex max-sm:flex-col md:flex-row lg:flex-row items-center justify-center sm:gap-5 lg:gap-7 sm:mt-5 lg:mt-10">
+    <div className="flex max-sm:flex-col md:flex-row lg:flex-row items-center justify-center sm:gap-5 lg:gap-7 sm:my-5 lg:my-10">
       {/* Profile Image */}
       <div className="fixed-ratio-container">
         <Image
@@ -20,7 +20,7 @@ const HeroContent = () => {
         <h1 className="font-merienda sm:text-[1.4rem] lg:text-4xl sm:leading-[1.5] lg:leading-[1.5] tracking-[1.5px]">
           Hi, I'm Mohitul Islam <br />
           and
-          <span className="bg-[#040507] hover:bg-[#f7ad36] text-[#fff] hover:text-[#040507] px-1 ml-1 transition-all ease-out">
+          <span className="bg-[#040507] hover:bg-[#f7ad36] text-[#fff] hover:text-[#040507] px-1 ml-1 transition-all ease-out cursor-pointer ">
             Junior Frontend Developer.
           </span>
         </h1>

@@ -140,30 +140,30 @@ const Navbar = ({ humburger, openMenu }) => {
           <div className="sm:block md:block lg:hidden">
             {/* Mobile and Tablet Menu */}
 
-            {/* Close Btn */}
-            <span
-              className="defaultTextlinkColor flex items-end justify-end mr-5 mt-5"
-              onClick={humburger}
-            >
-              <a href="#" className="">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </a>
-            </span>
-
             <div className="mt-[30%]">
+              {/* Close Btn */}
+              <span
+                className="defaultTextlinkColor flex items-end justify-center mb-5"
+                onClick={humburger}
+              >
+                <a href="#" className="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={3}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </a>
+              </span>
+
               <nav>
                 <ul className="flex flex-col items-center justify-between gap-7">
                   {menuItems?.map((item) => (
