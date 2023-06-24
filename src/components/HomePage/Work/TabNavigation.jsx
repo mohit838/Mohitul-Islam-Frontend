@@ -1,15 +1,13 @@
-'use client';
-
 const TabNavigation = ({ tabs, activeTab, setActiveTab }) => {
   return (
-    <div className="flex space-x-4">
+    <div className="flex item-center justify-center gap-3">
       {tabs.map((tab) => (
         <button
           key={tab}
-          className={`px-4 py-2 rounded-md ${
+          className={`px-4 py-2 rounded-2xl ${
             activeTab === tab
-              ? 'bg-blue-500 text-white'
-              : 'bg-gray-200 text-gray-700'
+              ? 'bg-[#f7ad36] text-[#040507]'
+              : 'bg-[#040507] text-white'
           }`}
           onClick={() => setActiveTab(tab)}
         >

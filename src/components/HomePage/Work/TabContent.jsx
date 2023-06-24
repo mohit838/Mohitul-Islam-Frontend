@@ -1,15 +1,16 @@
+import CardWrapper from '@/components/Common/CardWrapper/CardWrapper';
+import React from 'react';
+
 const TabContent = ({ activeTab, tabs }) => {
-  const activeTabData = tabs.find((tab) => tab.name === activeTab);
+  const activeTabData = tabs.find((tab) => tab?.name === activeTab);
 
   return (
-    <div>
+    <div className="grid grid-cols-3 mt-5 gap-5">
       {activeTabData &&
-        activeTabData.content.map((item) => (
-          <div key={item.id}>
-            <h3>{item.title}</h3>
-            <p>{item.desc}</p>
-            {/* Display the rest of the item data */}
-          </div>
+        activeTabData?.content?.map((item) => (
+          <React.Fragment key={item?.id}>
+            <CardWrapper item={item} />
+          </React.Fragment>
         ))}
     </div>
   );
