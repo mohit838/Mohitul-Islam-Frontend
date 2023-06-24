@@ -2,8 +2,10 @@ import SectionTitle from '@/components/Common/Layouts/SectionTitle';
 
 const Work = () => {
   return (
-    <div id="#work">
+    <div id="#work" className='globalMarginBottom'>
       <SectionTitle title={'Work'} />
+
+
     </div>
   );
 };

@@ -9,7 +9,7 @@ const HeroContent = () => {
   };
 
   return (
-    <div className="flex max-sm:flex-col md:flex-row lg:flex-row items-center justify-center sm:gap-5 lg:gap-7 sm:my-5 lg:my-10">
+    <div className="flex max-sm:flex-col md:flex-row lg:flex-row items-center justify-center sm:gap-5 lg:gap-7 globalMarginBottom">
       {/* Profile Image */}
       <motion.div {...motionOp} className="fixed-ratio-container">
         <Image
@@ -24,7 +24,7 @@ const HeroContent = () => {
       {/* Profile Info */}
       <motion.div
         {...motionOp}
-        className="flex flex-col items-start justify-between gap-5"
+        className="flex flex-col sm:items-center md:items-start justify-between gap-5"
       >
         <h1 className="font-merienda sm:text-[1.4rem] lg:text-4xl sm:leading-[1.5] lg:leading-[1.5] tracking-[1.5px]">
           Hi, I'm Mohitul Islam <br />
@@ -41,7 +41,7 @@ const HeroContent = () => {
         </p>
 
         {/* Contact and Work Button */}
-        <div className="flex flex-wrap items-start justify-between gap-7">
+        <div className="flex items-center justify-center gap-7">
           {actionBtn?.map((btn) => (
             <Button key={btn?.id} type={btn?.type}>
               <a href={`${btn?.link}`}>{btn?.btnName}</a>

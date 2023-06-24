@@ -1,7 +1,7 @@
 const Navbar = ({ humburger, openMenu }) => {
   return (
     <>
-      <div className="flex items-center justify-between gap-5">
+      <div className="flex items-center justify-between gap-5 globalMarginBottom max-sm:mb-1">
         {/* Logo */}
         <div>
           <h1 className="font-merienda font-bold text-[3rem] defaultTextlinkColor">

@@ -45,6 +45,10 @@ a {
 }
 
 @layer base {
+  .globalMarginBottom {
+    @apply mb-10;
+  }
+
   .menuLinks > a:hover {
     color: var(--primary-color);
     background: var(--secondary-color);
@@ -105,10 +109,13 @@ a {
   }
 
   .sectionTitle {
-    font-size: 40px;
     font-weight: var(--font-bold);
     font-family: var(--title-fonts);
     text-align: center;
+
+    h1 {
+      font-size: 40px;
+    }
   }
   /* Foter Desing */
   footer {
