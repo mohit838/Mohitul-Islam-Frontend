@@ -1,4 +1,7 @@
-const Footer = ({ devName, year }) => {
+const Footer = () => {
+  const year = new Date().getFullYear();
+  const devName = 'GhostRio Developer';
+
   return (
     <footer className="">
       <div className="footer-content">
