@@ -34,4 +34,5 @@ module.exports = {
       autoprefixer: {},
     },
   ],
+  darkMode: 'class',
 };

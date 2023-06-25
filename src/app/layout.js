@@ -1,3 +1,4 @@
+import CustomThemeProvider from '@/components/Theming/CustomThemeProvider';
 import { Merienda, Montserrat } from 'next/font/google';
 import './globals.css';
 
@@ -30,7 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${merienda.className} ${montserrat.className}`}>
-        {children}
+        <CustomThemeProvider>{children}</CustomThemeProvider>
       </body>
     </html>
   );
