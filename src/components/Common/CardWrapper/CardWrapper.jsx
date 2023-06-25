@@ -9,8 +9,6 @@ const CardWrapper = ({ item }) => {
     whileInView: { x: '0', opacity: '1' },
   };
 
-  console.log(item);
-
   return (
     <div className="flex flex-col items-center justify-between gap-2 my-2">
       <motion.div {...motionOp} className="fixed-ratio-container-work">
