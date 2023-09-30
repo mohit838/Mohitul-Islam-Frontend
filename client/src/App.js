@@ -11,6 +11,14 @@ import ProtectedRoute from './routes/ProtectedRoute';
 function App() {
   return (
     <Routes>
+      {/* Frontend Routing Start */}
+      <Route
+        path='/'
+        element={<FrontHome />}
+        exact
+      />
+      {/* Frontend Routing End */}
+
       {/* CMS Routing */}
       <Route
         path='/cms'
@@ -20,17 +28,17 @@ function App() {
           </ProtectedRoute>
         }
         exact
-      >
-        <Route
-          path='/dashboard'
-          element={
-            <ProtectedRoute>
-              <CMSHome />
-            </ProtectedRoute>
-          }
-          exact
-        />
-      </Route>
+      />
+
+      <Route
+        path='/dashboard'
+        element={
+          <ProtectedRoute>
+            <CMSHome />
+          </ProtectedRoute>
+        }
+        exact
+      />
 
       {/* Public Routes */}
       <Route
@@ -42,13 +50,6 @@ function App() {
       <Route
         path='/registration'
         element={<Register />}
-        exact
-      />
-
-      {/* Frontend Routing */}
-      <Route
-        path='/'
-        element={<FrontHome />}
         exact
       />
 

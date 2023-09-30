@@ -9,7 +9,6 @@ export function useGenericPagination(url) {
   const [isActive, setIsActive] = useState(true);
   const paginate = async (e) => {
     let p = e - 1;
-    console.log("mod p", p);
     let { data } = await API.post(`${url}?page=${p}`, {
       isActive: isActive,
     });
