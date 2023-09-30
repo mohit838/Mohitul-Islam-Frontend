@@ -33,3 +33,17 @@ a {
 ul {
   list-style: none;
 }
+
+/* Hero Section Start */
+.hero-section-nav {
+  @apply w-full h-14 flex items-center justify-between;
+}
+
+.mohitul-islam-logo {
+  @apply w-[100%] h-[100%];
+}
+
+.main-nav-menu {
+  @apply flex items-center justify-center gap-5;
+}
+/* Hero Section End */
