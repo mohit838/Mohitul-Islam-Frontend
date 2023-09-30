@@ -4,7 +4,7 @@ import Home from './componets/Home';
 import Login from './componets/auth/Login';
 import Register from './componets/auth/Register';
 import NotFound from './componets/common/NotFound';
-import DashboardLayout from './componets/layouts/DashboardLayout';
+import DashboardLayout from './componets/layouts/cms-layouts/DashboardLayout';
 import ProtectedRoute from './routes/ProtectedRoute';
 
 function App() {
