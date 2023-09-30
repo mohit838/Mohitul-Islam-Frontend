@@ -176,7 +176,7 @@ section {
 
 /* Progress Bar */
 .front-progress-bar {
-  @apply relative max-w-[500px] w-full bg-white mx-4 px-5 py-3;
+  @apply relative max-w-full w-full bg-white py-3;
 }
 
 .front-progress-bar .skill-box {
