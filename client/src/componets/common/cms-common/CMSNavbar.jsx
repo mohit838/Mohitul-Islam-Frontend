@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Navbar = () => {
+const CMSNavbar = () => {
   return <div>Navbar</div>;
 };
 
-export default Navbar;
+export default CMSNavbar;
