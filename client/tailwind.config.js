@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         logo: ['Dancing Script', 'cursive'],
+        brand: ['Bungee Outline', 'cursive'],
       },
     },
   },

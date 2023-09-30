@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
 
 :root {
   --logo-font: 'Dancing Script', cursive;
@@ -41,6 +42,10 @@ ul {
 
 section {
   @apply py-10;
+}
+
+.disable-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 /* Hero Section Start */
@@ -121,5 +126,12 @@ section {
 /* Hero Section End */
 
 /* Front Scroller Service Logo start*/
+.front-scroller-service-section {
+  @apply w-full h-32 bg-[#f8f8f8] flex items-center justify-center;
+}
+
+.brand-font {
+  @apply font-brand text-[3rem] font-bold flex items-center justify-between opacity-[0.5] overflow-x-auto whitespace-nowrap gap-10;
+}
 
 /* Front Scroller Service Logo end*/
