@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+:root {
+  --logo-font: 'Dancing Script', cursive;
+}
 
 html {
   font-size: 1rem; /* This sets the base font size for the entire document */
@@ -34,16 +39,87 @@ ul {
   list-style: none;
 }
 
+section {
+  @apply py-10;
+}
+
 /* Hero Section Start */
 .hero-section-nav {
-  @apply w-full h-14 flex items-center justify-between;
+  @apply container mx-auto w-full h-14 flex items-center justify-between;
 }
 
 .mohitul-islam-logo {
-  @apply w-[100%] h-[100%];
+  @apply text-[2.5rem] font-logo;
 }
 
 .main-nav-menu {
-  @apply flex items-center justify-center gap-5;
+  @apply flex items-center justify-center gap-10;
+}
+
+.main-nav-menu > li > a {
+  @apply text-[1.25rem] px-4 py-2 rounded-lg hover:bg-[#0077FF] hover:text-white hover:shadow-lg;
+}
+
+.custom-btn-front {
+  @apply font-bold text-white text-[1.25rem] px-8 py-2 rounded-full shadow-lg bg-[#0077ff] hover:bg-[#0b67cf];
+}
+
+/* Hero Slider */
+.hero-section {
+  @apply container mx-auto w-full h-screen flex items-center justify-center;
+}
+
+.hero-content-area {
+  @apply flex items-center justify-between my-10;
+}
+
+.hero-slider-text-and-btn {
+  @apply flex flex-col items-start justify-between gap-y-10;
+}
+
+.hero-slider-main-text {
+  @apply flex flex-col items-start justify-between 
+  gap-2;
+}
+
+.hero-slider-main-text > h2 {
+  @apply text-[25px] font-semibold;
+}
+
+.hero-slider-main-text > h1 {
+  @apply text-[75px] font-bold mb-2 leading-[5.75rem];
+}
+
+.hero-slider-main-text > h1 > span {
+  @apply text-[#0077FF];
+}
+
+.hero-slider-main-text > p {
+  @apply text-[20px];
+}
+
+.hero-slider-btn-group {
+  @apply flex items-start justify-start gap-5 mt-3;
+}
+
+/* w-[553px] h-[560px] */
+.hero-profile-img {
+  @apply aspect-video flex items-center justify-end;
+}
+
+.hero-profile-img > img {
+  @apply rounded-full shadow-lg;
+}
+
+.custom-btn-front-dwnl {
+  @apply font-bold text-white text-[1.25rem] px-8 py-2 rounded-full shadow-lg bg-[#0077ff] hover:bg-[#0b67cf];
+}
+
+.custom-btn-front-dwnl > a {
+  @apply flex items-center justify-center gap-2;
 }
 /* Hero Section End */
+
+/* Front Scroller Service Logo start*/
+
+/* Front Scroller Service Logo end*/

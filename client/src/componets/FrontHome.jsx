@@ -12,9 +12,9 @@ import Testimonial from './layouts/front-layouts/Testimonial';
 
 const FrontHome = () => {
   return (
-    <div className='container mx-auto px-5'>
+    <div className=''>
       <FrontNavbar />
-      {/* <Hero />
+      <Hero />
       <FrontScroller />
       <AboutMe />
       <Services />
@@ -22,7 +22,7 @@ const FrontHome = () => {
       <ProjectGallary />
       <Testimonial />
       <FrontContactUs />
-      <FrontFooter /> */}
+      <FrontFooter />
     </div>
   );
 };

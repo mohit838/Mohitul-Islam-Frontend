@@ -5,6 +5,7 @@ import FrontHome from './componets/FrontHome';
 import Login from './componets/auth/Login';
 import Register from './componets/auth/Register';
 import NotFound from './componets/common/NotFound';
+import FrontBlog from './componets/font-pages/FrontBlog';
 import DashboardLayout from './componets/layouts/cms-layouts/DashboardLayout';
 import ProtectedRoute from './routes/ProtectedRoute';
 
@@ -15,6 +16,11 @@ function App() {
       <Route
         path='/'
         element={<FrontHome />}
+        exact
+      />
+      <Route
+        path='/blog'
+        element={<FrontBlog />}
         exact
       />
       {/* Frontend Routing End */}
