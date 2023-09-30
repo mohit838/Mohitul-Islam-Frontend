@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 :root {
   --logo-font: 'Dancing Script', cursive;
@@ -127,7 +128,7 @@ section {
 
 /* Front Scroller Service Logo start*/
 .front-scroller-service-section {
-  @apply w-full h-32 bg-[#f8f8f8] flex items-center justify-center;
+  @apply w-full h-32 bg-[#f1f1f1] flex items-center justify-center;
 }
 
 .brand-font {
@@ -151,6 +152,75 @@ section {
 
 .about-me-info {
   @apply flex flex-col items-start justify-between gap-10;
+}
+
+.about-info-details {
+  @apply flex flex-col items-start justify-between gap-2;
+}
+
+.about-info-details > span {
+  @apply text-[20px] font-bold tracking-widest text-[#0077ff];
+}
+
+.about-info-details > h2 {
+  @apply text-[55px] font-bold;
+}
+
+.about-info-details > h2 > span {
+  @apply text-[55px] font-bold text-[#0077ff];
+}
+
+.about-info-details > p {
+  @apply text-[20px];
+}
+
+/* Progress Bar */
+.front-progress-bar {
+  @apply relative max-w-[500px] w-full bg-white mx-4 px-5 py-3;
+}
+
+.front-progress-bar .skill-box {
+  @apply w-full my-6;
+}
+
+.skill-title {
+  @apply block text-[14px] font-medium text-[#333];
+}
+
+.skill-bar {
+  @apply w-full h-[8px] bg-[#e3e3e3e6] rounded-md;
+}
+
+.skill-percentage {
+  animation: progress 0.4s ease-in-out forwards;
+
+  @apply relative block h-full rounded-md bg-[#0077ff] opacity-0;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-tooltip {
+  @apply absolute -right-[14px] bg-[#0077ff] -top-[28px] text-[9px] font-medium py-1 px-2.5 rounded z-[1];
+}
+
+.skill-tooltip::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: -2px;
+  background: #0077ff;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: -1;
 }
 
 /* About Me End */

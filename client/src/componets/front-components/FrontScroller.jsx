@@ -65,7 +65,7 @@ const common = css`
   white-space: nowrap;
   width: 100%;
   padding-left: 40px;
-  animation: ${scrollX} 10s linear infinite;
+  animation: ${scrollX} 30s linear infinite;
 `;
 
 const MarqueeGroup = styled.div`
@@ -79,6 +79,7 @@ const BrandGroups = styled.div`
 `;
 const BrandLogo = styled.h4`
   font-size: 2.5rem;
-  font-family: 'Bungee Outline', cursive;
+  font-family: 'Young Serif', serif;
   font-weight: 700;
+  opacity: 0.5;
 `;

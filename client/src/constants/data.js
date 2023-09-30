@@ -33,3 +33,30 @@ export const brandName = [
     name: 'Redux',
   },
 ];
+
+export const skills = [
+  {
+    id: 1,
+    skillName: 'React',
+    percentage: '90%',
+    code: 1,
+  },
+  {
+    id: 2,
+    skillName: 'Next',
+    percentage: '80%',
+    code: 2,
+  },
+  {
+    id: 3,
+    skillName: 'Node',
+    percentage: '70%',
+    code: 3,
+  },
+  {
+    id: 4,
+    skillName: 'JavaScript',
+    percentage: '95%',
+    code: 4,
+  },
+];

@@ -14,36 +14,69 @@ const AboutMe = () => {
       {/* About me info */}
       <div className='about-me-info w-1/2'>
         {/* Info section */}
-        <div className=''>
+        <div className='about-info-details'>
           <span>ABOUT ME</span>
           <h2>
-            <span>20 Year’s Experience</span>
-            on Product Design
+            <span>3 Year’s Experience</span>
+            <br />
+            on Frontend Engineering
           </h2>
-          <p>
-            Hello there! I'm Robert Junior. I specialize in web design and
-            development, and I'm deeply passionate and committed to my craft.
-            With 20 years of experience as a professional graphic designer
+          <p className=''>
+            I possess three years of professional experience in the software
+            industry, with one year of dedicated employment in this field.
+            During my tenure, I have actively contributed to numerous projects,
+            some of which have been successfully deployed on the web. I am
+            currently employed at a software company, where I continue to grow
+            and contribute to the industry.
           </p>
         </div>
 
         {/* Progress bar */}
-        <div className=''>
-          <div>
-            <h3>React</h3>
-            progressBar
+        <div className='front-progress-bar'>
+          {/* {skills?.map((skill) => (
+            <div
+              key={skill?.id}
+              className='skill-box'
+            >
+              <span className='skill-title'>{skill?.skillName}</span>
+              <div className='skill-bar'>
+                <span className={`skill-percentage w-[${skill?.percentage}]`}>
+                  <span className='skill-tooltip'>{skill?.percentage}</span>
+                </span>
+              </div>
+            </div>
+          ))} */}
+          <div className='skill-box'>
+            <span className='skill-title'>JavaScript</span>
+            <div className='skill-bar'>
+              <span className={`skill-percentage w-[90%]`}>
+                <span className='skill-tooltip'>90%</span>
+              </span>
+            </div>
           </div>
-          <div>
-            <h3>React</h3>
-            progressBar
+          <div className='skill-box'>
+            <span className='skill-title'>React</span>
+            <div className='skill-bar'>
+              <span className={`skill-percentage w-[70%]`}>
+                <span className='skill-tooltip'>80%</span>
+              </span>
+            </div>
           </div>
-          <div>
-            <h3>React</h3>
-            progressBar
+          <div className='skill-box'>
+            <span className='skill-title'>Node</span>
+            <div className='skill-bar'>
+              <span className={`skill-percentage w-[90%]`}>
+                <span className='skill-tooltip'>90%</span>
+              </span>
+            </div>
           </div>
-          <div>
-            <h3>React</h3>
-            progressBar
+          <div className='skill-box'>
+            <span className='skill-title'>TypeScript</span>
+            <div className='skill-bar'>
+              <span className={`skill-percentage w-[80%]`}>
+                <span className='skill-tooltip'>80%</span>
+              </span>
+            </div>
           </div>
         </div>
       </div>
