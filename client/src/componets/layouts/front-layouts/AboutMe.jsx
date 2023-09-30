@@ -2,7 +2,10 @@ import React from 'react';
 
 const AboutMe = () => {
   return (
-    <section className='about-me-section'>
+    <section
+      id='#about'
+      className='about-me-section'
+    >
       {/* About Me Image */}
       <div className='about-me-image w-1/2'>
         <img
