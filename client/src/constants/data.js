@@ -25,27 +25,11 @@ export const brandName = [
     name: 'Node JS',
   },
   {
-    id: 5,
-    name: 'Spring Boot',
-  },
-  {
     id: 6,
     name: 'Graphql',
   },
   {
     id: 7,
     name: 'Redux',
-  },
-  {
-    id: 8,
-    name: 'Redux Toolkit',
-  },
-  {
-    id: 9,
-    name: 'Typescript',
-  },
-  {
-    id: 10,
-    name: 'Postgres',
   },
 ];
