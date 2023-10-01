@@ -227,7 +227,27 @@ section {
 
 /* Service Start */
 .front-service-section {
-  @apply container mx-auto;
+  @apply container mx-auto flex flex-col items-center justify-center;
+}
+
+.service-info-details {
+  @apply flex flex-col items-center justify-center gap-3 mb-7;
+}
+
+.service-info-details > span {
+  @apply text-[20px] font-bold tracking-widest text-[#0077ff];
+}
+
+.service-info-details > h2 {
+  @apply flex items-center justify-center text-[55px] font-bold;
+}
+
+.service-info-details > h2 > span {
+  @apply ml-5 text-[55px] font-bold text-[#0077ff];
+}
+
+.service-info-details > p {
+  @apply text-[20px] px-[9.5rem] text-center;
 }
 
 /* Service End */

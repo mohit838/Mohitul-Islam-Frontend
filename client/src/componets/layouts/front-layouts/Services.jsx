@@ -1,4 +1,5 @@
 import React from 'react';
+import ServiceCard from '../../front-components/FrontServiceCard';
 
 const Services = () => {
   return (
@@ -6,7 +7,25 @@ const Services = () => {
       id='servies'
       className='front-service-section'
     >
-      Services
+      {/* Service Head Title */}
+      <div className='service-info-details'>
+        <span>SERVICES</span>
+        <h2>
+          {'Exploring My Design'}
+          <br />
+          <span> {' Skills'}</span>
+        </h2>
+        <p className=''>
+          {
+            'We transform your ideas into a distinctive web project that both inspires you and captivates your customers'
+          }
+        </p>
+      </div>
+
+      {/* Services Card Design */}
+      <div>
+        <ServiceCard />
+      </div>
     </section>
   );
 };
