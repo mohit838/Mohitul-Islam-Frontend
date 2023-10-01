@@ -4,7 +4,10 @@ import { personalInfo } from '../../../constants/data';
 
 const Hero = () => {
   return (
-    <div className='hero-section'>
+    <div
+      id='home'
+      className='hero-section'
+    >
       <div className='hero-content-area'>
         {/* slider text and btn*/}
         <div className='hero-slider-text-and-btn w-1/2'>

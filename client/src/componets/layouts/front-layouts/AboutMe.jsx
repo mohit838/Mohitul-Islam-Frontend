@@ -6,7 +6,7 @@ import { aboutMeInfo, skills } from '../../../constants/data';
 const AboutMe = () => {
   return (
     <section
-      id='#about'
+      id='about'
       className='about-me-section'
     >
       {/* About Me Image */}

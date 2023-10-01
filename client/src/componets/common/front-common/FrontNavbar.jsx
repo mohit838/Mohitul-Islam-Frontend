@@ -2,6 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const FrontNavbar = () => {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className='hero-section-nav'>
       {/* logo */}
@@ -14,23 +21,23 @@ const FrontNavbar = () => {
       {/* Navmenu */}
       <nav>
         <ul className='main-nav-menu'>
-          <li>
-            <Link to={'#home'}>Home</Link>
+          <li onClick={() => scrollToSection('home')}>
+            <Link to={''}>Home</Link>
           </li>
-          <li>
-            <Link to={'#about'}>About</Link>
+          <li onClick={() => scrollToSection('about')}>
+            <Link to={''}>About</Link>
           </li>
-          <li>
-            <Link to={'#servies'}>Servies</Link>
+          <li onClick={() => scrollToSection('servies')}>
+            <Link to={''}>Servies</Link>
           </li>
-          <li>
-            <Link to={'#gallary'}>Gallary</Link>
+          <li onClick={() => scrollToSection('gallary')}>
+            <Link to={''}>Gallary</Link>
           </li>
           <li>
             <Link to={'blog'}>Blog</Link>
           </li>
-          <li>
-            <Link to={'#contact'}>Contact Us</Link>
+          <li onClick={() => scrollToSection('contact')}>
+            <Link to={''}>Contact Us</Link>
           </li>
         </ul>
       </nav>

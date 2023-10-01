@@ -223,5 +223,11 @@ section {
   transform: translateX(-50%) rotate(45deg);
   z-index: -1;
 }
-
 /* About Me End */
+
+/* Service Start */
+.front-service-section {
+  @apply container mx-auto;
+}
+
+/* Service End */
