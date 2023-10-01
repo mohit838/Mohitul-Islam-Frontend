@@ -184,11 +184,11 @@ section {
 }
 
 .skill-title {
-  @apply block text-[14px] font-medium text-[#333];
+  @apply block text-[1.25rem] font-medium text-[#333];
 }
 
 .skill-bar {
-  @apply w-full h-[8px] bg-[#e3e3e3e6] rounded-md;
+  @apply w-full h-[20px] bg-[#e3e3e3e6] rounded-full;
 }
 
 .skill-percentage {
@@ -208,15 +208,16 @@ section {
 }
 
 .skill-tooltip {
-  @apply absolute -right-[14px] bg-[#0077ff] -top-[28px] text-[9px] font-medium py-1 px-2.5 rounded z-[1];
+  @apply absolute -right-[22px] text-white bg-[#0077ff] -top-[38px] text-[16px] font-medium py-1 px-2.5 rounded z-[1];
 }
 
 .skill-tooltip::before {
   content: '';
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   bottom: -2px;
+  color: white;
   background: #0077ff;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
