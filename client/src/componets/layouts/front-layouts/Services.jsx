@@ -23,7 +23,10 @@ const Services = () => {
       </div>
 
       {/* Services Card Design */}
-      <div>
+      <div className='front-service-card'>
+        <ServiceCard />
+        <ServiceCard />
+        <ServiceCard />
         <ServiceCard />
       </div>
     </section>

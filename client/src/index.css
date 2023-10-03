@@ -250,4 +250,20 @@ section {
   @apply text-[20px] px-[9.5rem] text-center;
 }
 
+.front-service-card {
+  @apply flex items-center justify-between gap-5;
+}
+
+.front-single-service-card {
+  @apply flex items-start justify-center flex-col gap-5 w-[23rem] h-[23rem] bg-[#0077ff] p-4;
+}
+
+.service-card-title {
+  @apply text-[25px] text-white font-bold;
+}
+
+.service-card-para {
+  @apply text-[20px] text-white font-medium;
+}
+
 /* Service End */
