@@ -55,10 +55,12 @@ const Hero = () => {
 
         {/* Hero Image */}
         <div className='hero-profile-img w-1/2'>
-          <img
-            src={`${personalInfo?.imgUrl}`}
-            alt={`${personalInfo?.alt}`}
-          />
+          <div className='flex items-center justify-center w-[580px] h-[580px] rounded-full overflow-hidden object-cover'>
+            <img
+              src={`${personalInfo?.imgUrl}`}
+              alt={`${personalInfo?.alt}`}
+            />
+          </div>
         </div>
       </div>
     </div>

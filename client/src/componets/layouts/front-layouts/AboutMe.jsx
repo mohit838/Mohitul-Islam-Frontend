@@ -12,7 +12,8 @@ const AboutMe = () => {
       {/* About Me Image */}
       <div className='about-me-image w-1/2'>
         <img
-          src='/images/mohit.jpg'
+        className=''
+          src='/images/mohitul-islam.png'
           alt='mohitul_islam'
         />
       </div>
