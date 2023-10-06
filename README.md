@@ -2,7 +2,7 @@
 
 ## Live Link
 
-<a href="https://github.com/mohit838" title="Mohammad Mohitul Islam">Protfolio Link</a>
+<a href="https://mohitul-islam.com" title="Mohammad Mohitul Islam">Protfolio Link</a>
 
 ## Technology For Protfolio Site
 
@@ -12,3 +12,16 @@
     4. Node JS
     5. Express
     6. MariaDB/MySql
+
+<!-- react-simple-typewriter
+<span>
+                <Typewriter
+                  words={[" Frontend Enginner.", " Freelancer."]}
+                  loop
+                  cursor
+                  cursorStyle='|'
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
+</span> -->

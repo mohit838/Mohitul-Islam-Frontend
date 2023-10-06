@@ -1,5 +1,5 @@
-import React from 'react';
-import ServiceCard from '../../front-components/FrontServiceCard';
+import React from "react";
+import ServiceCard from "../../front-components/FrontServiceCard";
 
 const Services = () => {
   return (
@@ -11,13 +11,13 @@ const Services = () => {
       <div className='service-info-details'>
         <span>SERVICES</span>
         <h2>
-          {'Exploring My Design'}
+          {"Exploring My Design And Coding"}
           <br />
-          <span> {' Skills'}</span>
+          <span> {" Skills"}</span>
         </h2>
         <p className=''>
           {
-            'We transform your ideas into a distinctive web project that both inspires you and captivates your customers'
+            "We transform your ideas into a distinctive web project that both inspires you and captivates your customers"
           }
         </p>
       </div>

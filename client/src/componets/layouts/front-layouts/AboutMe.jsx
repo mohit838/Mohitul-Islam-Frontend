@@ -13,7 +13,7 @@ const AboutMe = () => {
       <div className='about-me-image w-1/2'>
         <img
         className=''
-          src='/images/mohitul-islam.png'
+          src='/images/mohitul-islam.jpg'
           alt='mohitul_islam'
         />
       </div>
