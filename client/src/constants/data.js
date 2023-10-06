@@ -205,3 +205,28 @@ export const services = [
     ),
   },
 ];
+
+// Milestones
+
+export const milestones = [
+  {
+    id: 1,
+    number: "20+",
+    text: "Projects are running developing for productions.",
+  },
+  {
+    id: 2,
+    number: "100%",
+    text: "UI/UX based design for all projects structures",
+  },
+  {
+    id: 3,
+    number: "15+",
+    text: "Live projects and their supports as long as need.",
+  },
+  {
+    id: 4,
+    number: "50+",
+    text: "Make todo lists for traveling and make happend.",
+  },
+];

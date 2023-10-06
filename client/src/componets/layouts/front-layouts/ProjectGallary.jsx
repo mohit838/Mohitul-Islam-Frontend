@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const ProjectGallary = () => {
-  return <div>ProjectGallary</div>;
+  return <div>Gallary</div>;
 };
 
 export default ProjectGallary;

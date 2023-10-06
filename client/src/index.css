@@ -267,3 +267,36 @@ section {
 }
 
 /* Service End */
+
+/* Milestone card */
+.front-milestone-section {
+  @apply w-full h-[70vh] p-4 bg-[#0077ff] flex items-center justify-center flex-col;
+}
+
+.milestone-info-details {
+  @apply text-white flex items-center justify-center flex-col mb-5;
+}
+
+.milestone-info-details > span {
+  @apply text-[20px] font-bold tracking-widest;
+}
+
+.milestone-info-details > h2 {
+  @apply text-[55px] font-bold leading-[3.75rem];
+}
+
+.milestone-container {
+  @apply container mx-auto p-4;
+}
+
+.front-milestone-card {
+  @apply mt-10 flex items-center justify-center gap-7;
+}
+
+.front-milestore-single-card {
+  @apply flex items-center justify-center gap-3 flex-col rounded-lg bg-white text-[#333333] p-10 text-[20px] shadow-2xl w-3/12;
+}
+
+.front-milestore-single-card > h2 {
+  @apply text-[55px] font-bold;
+}
