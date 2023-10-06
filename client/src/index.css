@@ -270,7 +270,8 @@ section {
 
 /* Milestone card */
 .front-milestone-section {
-  @apply w-full h-[70vh] p-4 bg-[#0077ff] flex items-center justify-center flex-col;
+  @apply w-full h-[70vh] p-4 bg-[#0077ff]
+    flex items-center justify-center flex-col;
 }
 
 .milestone-info-details {
