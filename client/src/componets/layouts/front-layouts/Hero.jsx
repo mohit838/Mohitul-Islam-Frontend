@@ -4,7 +4,10 @@ import { personalInfo } from '../../../constants/data';
 
 const Hero = () => {
   return (
-    <div className='hero-section'>
+    <div
+      id='home'
+      className='hero-section'
+    >
       <div className='hero-content-area'>
         {/* slider text and btn*/}
         <div className='hero-slider-text-and-btn w-1/2'>
@@ -52,10 +55,12 @@ const Hero = () => {
 
         {/* Hero Image */}
         <div className='hero-profile-img w-1/2'>
-          <img
-            src={`${personalInfo?.imgUrl}`}
-            alt={`${personalInfo?.alt}`}
-          />
+          <div className='flex items-center justify-center w-[580px] h-[580px] rounded-full overflow-hidden object-cover'>
+            <img
+              src={`${personalInfo?.imgUrl}`}
+              alt={`${personalInfo?.alt}`}
+            />
+          </div>
         </div>
       </div>
     </div>

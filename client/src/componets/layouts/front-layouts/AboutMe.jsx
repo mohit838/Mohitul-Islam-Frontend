@@ -1,15 +1,19 @@
+/* eslint-disable eqeqeq */
+import classnames from 'classnames';
 import React from 'react';
+import { aboutMeInfo, skills } from '../../../constants/data';
 
 const AboutMe = () => {
   return (
     <section
-      id='#about'
+      id='about'
       className='about-me-section'
     >
       {/* About Me Image */}
       <div className='about-me-image w-1/2'>
         <img
-          src='/images/mohit.jpg'
+        className=''
+          src='/images/mohitul-islam.jpg'
           alt='mohitul_islam'
         />
       </div>
@@ -20,67 +24,44 @@ const AboutMe = () => {
         <div className='about-info-details'>
           <span>ABOUT ME</span>
           <h2>
-            <span>3 Year’s Experience</span>
+            <span>{aboutMeInfo?.exp}</span>
             <br />
-            on Frontend Engineering
+            {aboutMeInfo?.designation}
           </h2>
           <p className=''>
-            I possess three years of professional experience in the software
-            industry, with one year of dedicated employment in this field.
-            During my tenure, I have actively contributed to numerous projects,
-            some of which have been successfully deployed on the web. I am
-            currently employed at a software company, where I continue to grow
-            and contribute to the industry.
+           {aboutMeInfo?.aboutMe}
           </p>
         </div>
 
         {/* Progress bar */}
         <div className='front-progress-bar'>
-          {/* {skills?.map((skill) => (
+          {skills?.map((skill) => (
             <div
               key={skill?.id}
               className='skill-box'
             >
               <span className='skill-title'>{skill?.skillName}</span>
               <div className='skill-bar'>
-                <span className={`skill-percentage w-[${skill?.percentage}]`}>
+                <span
+                  className={classnames({
+                    'skill-percentage': true,
+                    'w-[10%]': `${skill?.code}` == 1,
+                    'w-[20%]': `${skill?.code}` == 2,
+                    'w-[30%]': `${skill?.code}` == 3,
+                    'w-[40%]': `${skill?.code}` == 4,
+                    'w-[50%]': `${skill?.code}` == 5,
+                    'w-[60%]': `${skill?.code}` == 6,
+                    'w-[70%]': `${skill?.code}` == 7,
+                    'w-[80%]': `${skill?.code}` == 8,
+                    'w-[90%]': `${skill?.code}` == 9,
+                    'w-[100%]': `${skill?.code}` == 10,
+                  })}
+                >
                   <span className='skill-tooltip'>{skill?.percentage}</span>
                 </span>
               </div>
             </div>
-          ))} */}
-          <div className='skill-box'>
-            <span className='skill-title'>JavaScript</span>
-            <div className='skill-bar'>
-              <span className={`skill-percentage w-[90%]`}>
-                <span className='skill-tooltip'>90%</span>
-              </span>
-            </div>
-          </div>
-          <div className='skill-box'>
-            <span className='skill-title'>React</span>
-            <div className='skill-bar'>
-              <span className={`skill-percentage w-[70%]`}>
-                <span className='skill-tooltip'>80%</span>
-              </span>
-            </div>
-          </div>
-          <div className='skill-box'>
-            <span className='skill-title'>Node</span>
-            <div className='skill-bar'>
-              <span className={`skill-percentage w-[90%]`}>
-                <span className='skill-tooltip'>90%</span>
-              </span>
-            </div>
-          </div>
-          <div className='skill-box'>
-            <span className='skill-title'>TypeScript</span>
-            <div className='skill-bar'>
-              <span className={`skill-percentage w-[80%]`}>
-                <span className='skill-tooltip'>80%</span>
-              </span>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
