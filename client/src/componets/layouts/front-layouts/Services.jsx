@@ -1,5 +1,6 @@
 import React from "react";
 import ServiceCard from "../../front-components/FrontServiceCard";
+import { services } from "../../../constants/data";
 
 const Services = () => {
   return (
@@ -24,10 +25,12 @@ const Services = () => {
 
       {/* Services Card Design */}
       <div className='front-service-card'>
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
+        {services?.map((item) => (
+          <ServiceCard
+            key={item?.id}
+            serviceItems={item}
+          />
+        ))}
       </div>
     </section>
   );
