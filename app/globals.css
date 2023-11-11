@@ -1,16 +1,118 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --site-color: #d3d3d3;
+  --site-bg-color: #fff;
   --site-font: "Work Sans", sans-serif;
+  --site-logo-font: "Permanent Marker", cursive;
   scroll-behavior: smooth;
 }
 
 body {
-  color: var(--site-color);
+  background-color: var(--site-bg-color);
   font-family: var(--site-font);
+}
+
+p {
+  font-size: 1rem;
+}
+
+section {
+  @apply container px-4 mx-auto;
+}
+
+.section-padding {
+  @apply mb-10;
+}
+
+/* Header Area */
+.header-area {
+  @apply flex items-center justify-between;
+}
+
+.site-logo {
+  font-family: var(--site-logo-font);
+  @apply text-3xl cursor-pointer;
+}
+
+.menu-and-theme {
+  @apply flex items-center justify-between gap-5;
+}
+
+.nav-items {
+  @apply flex items-center justify-between gap-4 my-4 text-xl font-semibold;
+}
+
+.nav-items > li > a {
+  @apply no-underline p-3 rounded-md hover:bg-[#000] hover:text-[#fff] transition-all cursor-pointer;
+}
+
+.header-icons {
+  @apply flex items-center justify-between gap-5;
+}
+
+.mobile-menu-bar {
+  @apply sm:block lg:hidden;
+}
+
+/* Hero Content */
+.hero-content {
+  @apply flex items-center justify-between gap-5;
+}
+
+.profile-image {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  @apply w-full h-full rounded-2xl bg-white;
+}
+
+.stack-btn {
+  @apply bg-transparent text-black hover:text-[#3c3c3c] font-semibold py-2 px-4 border border-black rounded-lg;
+}
+
+.main-title {
+  @apply text-6xl font-bold mb-5 leading-[5rem];
+}
+
+.focus-title {
+  @apply bg-orange-500 text-white p-1;
+}
+
+.intro-para {
+  @apply text-lg;
+}
+
+/* Skills */
+.stack-title {
+  @apply text-2xl font-semibold;
+}
+
+.skill-stacks {
+  @apply flex flex-col items-start justify-between gap-4;
+}
+
+.single-stacks {
+  @apply flex items-center justify-center gap-3;
+}
+
+/* Exp section */
+.section-title {
+  @apply mt-5 mb-10 p-5 text-center text-5xl font-bold;
+}
+
+/* Footer */
+.site-footer {
+  @apply mt-10 bg-black h-[200px] text-white py-10;
+}
+
+.footer-section {
+  @apply flex flex-col items-center justify-between gap-y-4;
+}
+
+.footer-social-media {
+  @apply flex items-center justify-between gap-5;
 }
