@@ -1,15 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html {
-  --line-color: #e5e7eb;
+:root {
+  --site-font: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
-html.dark {
-  --line-color: rgba(255, 255, 255, 0.2);
-}
-
-.borderBlack {
-  @apply border border-black/10;
+body {
+  color: #d3d3d3;
+  font-family: var(--site-font);
 }
