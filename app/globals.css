@@ -5,11 +5,12 @@
 @tailwind utilities;
 
 :root {
+  --site-color: #d3d3d3;
   --site-font: "Work Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  color: #d3d3d3;
+  color: var(--site-color);
   font-family: var(--site-font);
 }
