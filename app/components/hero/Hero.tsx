@@ -53,7 +53,7 @@ const Hero = () => {
           <div className="w-1/4">
             <div className="profile-image">
               <Image
-                src={"mohitul-islam.png"}
+                src={"mohitul-islam.webp"}
                 alt={"mohitul-islam"}
                 width={500}
                 height={500}
