@@ -18,7 +18,8 @@ body {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem; /* 28px */
 }
 
 section {
@@ -75,7 +76,7 @@ section {
 }
 
 .main-title {
-  @apply text-6xl font-bold mb-5 leading-[5rem];
+  @apply text-[3rem] font-bold mb-5 leading-[4rem];
 }
 
 .focus-title {
