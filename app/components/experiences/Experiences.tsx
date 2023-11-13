@@ -1,27 +1,41 @@
-import CardExp from "../common/CardExp";
+import { expAndEdu } from "@/app/data/Data";
+import CardExpLeft from "../common/CardExpLeft";
+import CardExpRight from "../common/CardExpRight";
+import { MiddleBar } from "../common/MiddleBar";
 
 const Experiences = () => {
   return (
     <section>
       <div className="section-padding">
         {/* Section Title */}
-        <div className="section-title">Experiences</div>
+        <div className="section-title">Experiences & Educations</div>
+        {/* <div className="relative section-title flex items-center justify-center">
+          Experiences & Educations
+          <div className="absolute rotate-90 mt-[80px]">
+            <MiddleBar />
+          </div>
+        </div> */}
 
         {/* Section Content */}
-        <div className="all-exp-area">
-          {/* Educations */}
-          <div>
-            <CardExp />
-          </div>
+        {expAndEdu?.map((item) => (
+          <div
+            key={item?.id}
+            className="all-exp-area"
+          >
+            {/* Job Experiences */}
+            <div className="w-1/2">
+              <CardExpLeft duration={item?.duration} />
+            </div>
 
-          {/* Middle Bar */}
-          <div className="w-[2px] h-10 bg-black"></div>
+            {/* Middle Bar */}
+            <MiddleBar />
 
-          {/* Job Experiences */}
-          <div>
-            <CardExp />
+            {/* Educations */}
+            <div className="w-1/2">
+              <CardExpRight itemTitle={item} />
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );

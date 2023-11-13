@@ -51,14 +51,18 @@ const Hero = () => {
 
             {/* Connect Btn */}
             <div className="social-connect-btn">
-              <div className="custom-connect-btn-linkedin">
-                <Link href="https://www.linkedin.com/in/mohit449/">
-                  {"LinkedIn"}
-                </Link>
-              </div>
-              <div className="custom-connect-btn">
-                <Link href="https://github.com/mohit838">{"GitHub"}</Link>
-              </div>
+              <Link
+                href="https://www.linkedin.com/in/mohit449/"
+                target="_blank"
+              >
+                <div className="custom-connect-btn-linkedin">{"LinkedIn"}</div>
+              </Link>
+              <Link
+                href="https://github.com/mohit838"
+                target="_blank"
+              >
+                <div className="custom-connect-btn">{"GitHub"}</div>
+              </Link>
             </div>
           </div>
 

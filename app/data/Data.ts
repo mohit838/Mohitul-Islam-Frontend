@@ -39,3 +39,36 @@ export const familiarWithStacks = [
     title: "MySql",
   },
 ];
+
+export const expAndEdu = [
+  {
+    id: 1,
+    jobTitle: "Jr Software Engineer",
+    location: "Dhaka, Bangladesh",
+    duration: "2023 July to Present",
+  },
+  {
+    id: 2,
+    jobTitle: "Trainee Software Engineer",
+    location: "Dhaka, Bangladesh",
+    duration: "2022 Dec to 2023 June",
+  },
+  {
+    id: 3,
+    jobTitle: "BSc In Computer Science",
+    location: "Dhaka, Bangladesh",
+    duration: "2017 Aug to 2021 Aug",
+  },
+  {
+    id: 4,
+    jobTitle: "Higher School Certificate",
+    location: "Dhaka, Bangladesh",
+    duration: "2009 to 2011",
+  },
+  {
+    id: 5,
+    jobTitle: "Secondary School Certificate",
+    location: "Dhaka, Bangladesh",
+    duration: "2007 to 2009",
+  },
+];
