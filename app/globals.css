@@ -87,6 +87,18 @@ section {
   @apply text-lg;
 }
 
+.social-connect-btn {
+  @apply flex items-center justify-start gap-5 mt-5;
+}
+
+.custom-connect-btn {
+  @apply px-8 py-4 text-black border-[2px] shadow-md rounded-md text-xl;
+}
+
+.custom-connect-btn-linkedin {
+  @apply px-8 py-4 bg-black text-white border-[2px] shadow-md rounded-md text-xl;
+}
+
 /* Skills */
 .stack-title {
   @apply text-2xl font-semibold;
@@ -116,4 +128,15 @@ section {
 
 .footer-social-media {
   @apply flex items-center justify-between gap-5;
+}
+
+/* All exp area */
+.all-exp-area {
+  @apply flex items-center justify-between gap-5;
+}
+
+.custom-card-for-exp {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  @apply w-full h-full rounded-2xl bg-white p-4;
 }

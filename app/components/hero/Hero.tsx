@@ -1,5 +1,6 @@
 import { familiarWithStacks, skillStacks } from "@/app/data/Data";
 import Image from "next/image";
+import Link from "next/link";
 import TechStacks from "../techStacks/TechStacks";
 
 const Hero = () => {
@@ -15,7 +16,7 @@ const Hero = () => {
                 <span className="focus-title">Frontend</span> Engineer
               </span>
             </div>
-            <div className="mb-10">
+            <div className="mb-9">
               <p className="intro-para">
                 I&apos;m Mohitul, a passionate frontend engineer with{" "}
                 <span>1 year of hands-on experience.</span> I specialize in
@@ -45,6 +46,18 @@ const Hero = () => {
                     skill={skill}
                   />
                 ))}
+              </div>
+            </div>
+
+            {/* Connect Btn */}
+            <div className="social-connect-btn">
+              <div className="custom-connect-btn-linkedin">
+                <Link href="https://www.linkedin.com/in/mohit449/">
+                  {"LinkedIn"}
+                </Link>
+              </div>
+              <div className="custom-connect-btn">
+                <Link href="https://github.com/mohit838">{"GitHub"}</Link>
               </div>
             </div>
           </div>

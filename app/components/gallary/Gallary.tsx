@@ -1,7 +1,6 @@
 const Gallary = () => {
   return (
-    <section>
-      <div className="section-padding">Gallary</div>
+    <section className="section-padding">
       {/* Section Title */}
       <div className="section-title">Gallary</div>
 
