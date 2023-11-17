@@ -841,7 +841,7 @@ const Contacts = () => {
               <textarea
                 id="formMessage"
                 className="form-control form-control-lg"
-                rows="7"
+                // rows="7"
                 placeholder="Mensagem"
               ></textarea>
             </div>
@@ -850,7 +850,7 @@ const Contacts = () => {
               <button
                 type="submit"
                 className="btn btn-primary"
-                tabIndex="-1"
+                // tabIndex="-1"
               >
                 Send message
               </button>
