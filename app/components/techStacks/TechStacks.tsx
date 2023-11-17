@@ -8,7 +8,9 @@ interface skillStacks {
 const TechStacks = (skill: skillStacks) => {
   return (
     <div>
-      <button className="stack-btn">{skill?.skill?.title}</button>
+      <button className="stack-btn whitespace-nowrap">
+        {skill?.skill?.title}
+      </button>
     </div>
   );
 };

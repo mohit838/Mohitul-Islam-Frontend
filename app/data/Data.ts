@@ -89,7 +89,7 @@ export const garallyItems = [
     id: 2,
     imgSrc: "/project/booking.webp",
     desc: "A booking app landing page design without backend codes just front end with React, SaSS, React Router. This was also my first react project when I practising react.",
-    link: "https://github.com/mohit838",
+    link: "https://phenomenal-tartufo-cdbc52.netlify.app/",
   },
   {
     id: 3,
