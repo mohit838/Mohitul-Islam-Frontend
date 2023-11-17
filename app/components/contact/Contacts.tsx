@@ -21,8 +21,7 @@ const Contacts = () => {
         </div>
 
         {/* Mail Box */}
-
-        <div className="flex items-center justify-center my-10">
+        <div className="flex flex-col md:flex-row items-center justify-center my-10 max-w-fit">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 790 563"

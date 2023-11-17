@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="section-padding">
         <div className="hero-content">
           {/* Intro Box */}
-          <div className="w-3/4">
+          <div className="w-full md:w-3/4">
             <div className="main-title">
               <h1>Hello, I&apos;m Mohitul</h1>
               <span>
@@ -67,7 +67,7 @@ const Hero = () => {
           </div>
 
           {/* Image Box */}
-          <div className="w-1/4">
+          <div className="w-full md:w-1/4">
             <div className="profile-image">
               <Image
                 src={"mohitul-islam.webp"}

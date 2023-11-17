@@ -33,12 +33,12 @@ section {
 
 .section-title {
   font-family: var(--site-section-title);
-  @apply mt-5 mb-10 p-5 text-center text-5xl font-bold;
+  @apply mt-5 mb-10 p-5 text-center text-5xl font-bold leading-[60px] md:leading-[0];
 }
 
 /* Header Area */
 .header-area {
-  @apply flex items-center justify-between;
+  @apply flex items-center justify-between mt-3 md:mt-0;
 }
 
 .site-logo {
@@ -48,6 +48,10 @@ section {
 
 .menu-and-theme {
   @apply flex items-center justify-between gap-5;
+}
+
+.nav-menu {
+  @apply hidden md:block;
 }
 
 .nav-items {
@@ -63,12 +67,12 @@ section {
 }
 
 .mobile-menu-bar {
-  @apply sm:block lg:hidden;
+  @apply hidden;
 }
 
 /* Hero Content */
 .hero-content {
-  @apply flex items-center justify-between gap-5;
+  @apply flex flex-col-reverse md:flex-row md:items-start lg:items-center justify-between gap-5;
 }
 
 .profile-image {
@@ -111,11 +115,11 @@ section {
 }
 
 .skill-stacks {
-  @apply flex flex-col items-start justify-between gap-4;
+  @apply flex flex-col flex-wrap md:flex-nowrap items-start justify-between gap-4;
 }
 
 .single-stacks {
-  @apply flex items-center justify-center gap-3;
+  @apply flex flex-wrap md:flex-nowrap justify-start items-center md:justify-center gap-3;
 }
 
 /* Footer */
@@ -133,7 +137,7 @@ section {
 
 /* All exp area */
 .all-exp-area {
-  @apply flex items-center justify-center gap-5 mb-10;
+  @apply flex flex-col md:flex-row items-center justify-center gap-0 md:gap-5 mb-10;
 }
 
 .custom-card-for-exp {
@@ -152,7 +156,7 @@ section {
 }
 
 .grallary-section-card {
-  @apply flex flex-wrap lg:flex-nowrap items-start justify-between gap-5;
+  @apply flex flex-wrap md:flex-nowrap items-start justify-between gap-5;
 }
 
 /* Contact us */
@@ -295,4 +299,27 @@ textarea {
 textarea#formMessage {
   margin: 8px 0;
   width: 100%;
+}
+
+/* Media Query */
+@media not all and (min-width: 640px) {
+  .main-title {
+    font-size: 2rem;
+    line-height: 2.85rem;
+  }
+
+  .section-title {
+    margin: 1rem 0;
+    font-size: 2rem;
+    line-height: 42px;
+  }
+
+  .contact-svg {
+    height: 9rem;
+    margin-right: 0;
+  }
+
+  form {
+    min-width: 19rem;
+  }
 }

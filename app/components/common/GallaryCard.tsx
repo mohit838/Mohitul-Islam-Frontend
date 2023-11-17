@@ -12,7 +12,7 @@ interface gItems {
 
 const GallaryCard = ({ item }: gItems) => {
   return (
-    <div className="w-1/2">
+    <div className="w-full md:w-1/2">
       <div className="gallary-card">
         <Link
           href={`${item?.link}`}

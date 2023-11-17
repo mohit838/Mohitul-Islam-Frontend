@@ -23,15 +23,17 @@ const Experiences = () => {
             className="all-exp-area"
           >
             {/* Job Experiences */}
-            <div className="w-1/2">
+            <div className="w-full mb-[-2rem] md:w-1/2 md:mb-0">
               <CardExpLeft duration={item?.duration} />
             </div>
 
             {/* Middle Bar */}
-            <MiddleBar />
+            <div className="rotate-90 md:rotate-0 mb-[-2rem] md:mb-0">
+              <MiddleBar />
+            </div>
 
             {/* Educations */}
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2">
               <CardExpRight itemTitle={item} />
             </div>
           </div>

@@ -21,8 +21,8 @@ const Footer = () => {
 
           {/* Copyright text */}
           <div>
-            <p>
-              Copyright © {new Date().getFullYear()} This is made by ❤️ Mohitul
+            <p className="text-sm md:text-base">
+              Copyright © {new Date().getFullYear()} made by ❤️ Mohitul
               Islam
             </p>
           </div>
