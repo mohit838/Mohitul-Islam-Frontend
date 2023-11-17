@@ -1,7 +1,6 @@
 const Contacts = () => {
   return (
-    <section>
-      <div className="section-padding">Contacts</div>
+    <section className="section-padding">
       {/* Section Title */}
       <div className="section-title">Contacts</div>
 

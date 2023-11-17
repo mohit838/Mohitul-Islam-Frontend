@@ -77,3 +77,30 @@ export const expAndEdu = [
     duration: "2007 to 2009",
   },
 ];
+
+export const garallyItems = [
+  {
+    id: 1,
+    imgSrc: "/project/dine.webp",
+    desc: "A restaurant landing page with html css with responsive mode. Yeah added some js animation for looking better views and interactions. This is my first project when I practising web apps developments.",
+    link: "https://mohit838.github.io/Restaurant-Project-Practice-Using-HTML-and-CSS/",
+  },
+  {
+    id: 2,
+    imgSrc: "/project/booking.webp",
+    desc: "A booking app landing page design without backend codes just front end with React, SaSS, React Router. This was also my first react project when I practising react.",
+    link: "https://github.com/mohit838",
+  },
+  {
+    id: 3,
+    imgSrc: "/project/placeholder.webp",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aspernatur, recusandae harum earum tempora officiis dolorum ducimus. Reprehenderit iure quidem quo dolorem porro.",
+    link: "https://github.com/mohit838",
+  },
+  {
+    id: 4,
+    imgSrc: "/project/placeholder.webp",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aspernatur, recusandae harum earum tempora officiis dolorum ducimus. Reprehenderit iure quidem quo dolorem porro.",
+    link: "https://github.com/mohit838",
+  },
+];
