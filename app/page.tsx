@@ -1,3 +1,9 @@
+import Hero from '@/components/layouts/Hero';
+
 export default function Home() {
-  return <main>This is home page</main>;
+  return (
+    <main className="container mx-auto">
+      <Hero />
+    </main>
+  );
 }
