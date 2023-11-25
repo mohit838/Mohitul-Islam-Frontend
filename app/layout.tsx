@@ -3,6 +3,13 @@ import { Inter } from 'next/font/google';
 import { Metadata } from '../types/Types';
 import './globals.css';
 
+// @ThemeProvider
+import NextThemeProvider from '@/components/layouts/ThemeProvider';
+
+// @Components
+import Footer from '@/components/layouts/Footer';
+import Header from '@/components/layouts/Header';
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -17,8 +24,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <NextThemeProvider
+          attribute="class"
+          defaultTheme="light"
+        >
+          <Header />
+          {children}
+          <Footer />
+        </NextThemeProvider>
+      </body>
     </html>
   );
 }
