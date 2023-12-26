@@ -1,12 +1,7 @@
-import React from 'react';
-import { Button } from '@/components/ui/button';
 import { Download, Send } from 'lucide-react';
-import {
-  RiBriefcase4Fill,
-  RiTeamFill,
-  RiTodoFill,
-  RiArrowDownSLine,
-} from 'react-icons/ri';
+import Link from 'next/link';
+import { RiArrowDownSLine } from 'react-icons/ri';
+import { Button } from '../ui/button';
 
 const Hero = () => {
   return (
@@ -14,20 +9,39 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/* Text */}
-          <div>
-            <div>Frontend Engineer</div>
-            <h1 className="h1">Hello, my name is Mohit</h1>
-            <p>
+          <div className="flex flex-col justify-center max-w-[600px] mx-auto xl:mx-0 text-center xl:text-left">
+            <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
+              Frontend Engineer
+            </div>
+            <h1 className="h1">Hello, I'm Mohit</h1>
+            <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
               I'm Mohit, a passionate frontend engineer with 1 year of hands-on
               experience. I specialize incrafting dynamic and responsive
               websites using React with a focus on Next.js. My commitment to
               excellence extends to staying updated on industry trends and
               adhering to the highest standards of code quality.
             </p>
+
+            {/* Button */}
+            <div className="flex flex-col md:flex-row gap-y-3 md:flex-grow gap-x-3 mx-auto xl:mx-0 mb-12">
+              <Link href={'/contact'}>
+                <Button className="gap-x-2">
+                  Contact Me <Send size={18} />
+                </Button>
+              </Link>
+              <Link href={'/'}>
+                <Button
+                  variant={'secondary'}
+                  className="gap-x-2"
+                >
+                  Download CV <Download size={18} />
+                </Button>
+              </Link>
+            </div>
           </div>
 
           {/* Image */}
-          <div>Img</div>
+          <div className="hidden xl:flex relative">Img</div>
         </div>
 
         {/* Social */}
