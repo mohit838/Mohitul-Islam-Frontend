@@ -1,7 +1,13 @@
 import { Download, Send } from "lucide-react";
 import Link from "next/link";
-import { RiArrowDownSLine } from "react-icons/ri";
+import {
+  RiArrowDownSLine,
+  RiBriefcase4Fill,
+  RiTeamFill,
+  RiTodoFill,
+} from "react-icons/ri";
 import { Button } from "../ui/button";
+import CounterBadge from "./CounterBadge";
 import DevImage from "./DevImage";
 import SocialIcon from "./SocialIcon";
 
@@ -17,11 +23,11 @@ const Hero = () => {
             </div>
             <h1 className="h1">Hello, I'm Mohit</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              I'm Mohit, a passionate frontend engineer with 1 year of hands-on
-              experience. I specialize incrafting dynamic and responsive
-              websites using React with a focus on Next.js. My commitment to
-              excellence extends to staying updated on industry trends and
-              adhering to the highest standards of code quality.
+              I'm Mohit, a passionate frontend engineer with almost 2 year of
+              hands-on experience. I specialize incrafting dynamic and
+              responsive websites using React with a focus on Next.js. My
+              commitment to excellence extends to staying updated on industry
+              trends and adhering to the highest standards of code quality.
             </p>
 
             {/* Button */}
@@ -50,6 +56,32 @@ const Hero = () => {
 
           {/* Image */}
           <div className="hidden xl:flex relative">
+            {/* Badge 1 */}
+            <CounterBadge
+              contiainerStyles={`absolute top-[24%] -left-[5rem]`}
+              icon={<RiBriefcase4Fill />}
+              endCountNum={2}
+              badgeText={"Years of experience"}
+            />
+
+            {/* Badge 2 */}
+            <CounterBadge
+              contiainerStyles={`absolute top-[80%] -left-[1rem]`}
+              icon={<RiTodoFill />}
+              endCountNum={3}
+              endCounterText={""}
+              badgeText={"Finnished Projects"}
+            />
+
+            {/* Badge 3 */}
+            <CounterBadge
+              contiainerStyles={`absolute top-[55%] -right-8`}
+              icon={<RiTeamFill />}
+              endCountNum={9}
+              endCounterText={""}
+              badgeText={"Happy Clients"}
+            />
+
             <div className="bg-hero_shape_light dark:bg-hero_shape_dark bg-no-repeat absolute -top-1 -right-2 w-[500px] h-[500px]"></div>
             {/* Dev Image */}
             <DevImage
