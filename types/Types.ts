@@ -8,3 +8,9 @@ export type Metadata = {
   description: string;
   authors: Author[];
 };
+
+export interface SocialIconsProps {
+  contiainerStyles?: string;
+  iconsStyles?: string;
+  imgSrc?: string;
+}
