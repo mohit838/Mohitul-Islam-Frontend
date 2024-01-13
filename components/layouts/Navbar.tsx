@@ -1,27 +1,27 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface NavbarProps {
-  containerStyle: string;
+  containerStyle?: string;
   linksStyle?: string; // Optional prop
   underlineStyle?: string; // Optional prop
 }
 
 const links = [
   {
-    path: '/',
-    name: 'home',
+    path: "/",
+    name: "home",
   },
   {
-    path: '/projects',
-    name: 'projects',
+    path: "/projects",
+    name: "projects",
   },
   {
-    path: '/contact',
-    name: 'contact',
+    path: "/contact",
+    name: "contact",
   },
 ];
 
@@ -42,9 +42,9 @@ const Navbar = ({
         >
           {item.path === pathName && (
             <motion.span
-              initial={{ y: '-100%' }}
+              initial={{ y: "-100%" }}
               animate={{ y: 0 }}
-              transition={{ type: 'tween' }}
+              transition={{ type: "tween" }}
               layoutId="underline"
               className={`${underlineStyle}`}
             />
