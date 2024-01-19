@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+
+
+#
+# MONGO DB DUMP && RESTORE DATA
+# NOTE:: (No nedd to delete prev data cause mongorestore replace with update)
+#
+# MONGO DUMP inside mongodb container
+#
+# docker exec -it container_name bash
+# mongodump --username=usename --password=password --out /dump
+# exit
+#
+# COPY INTO LOCAL MECHINE
+# docker cp container_name:/dump /local_file_path
+# ------------------------------------------------------------------------------------
+#
+# MONGO RESTORE inside mongodb container
+# docker cp /path/on/host/machine/your_backup_directory your_mongo_container_name:/dump
+# docker exec -it container_name bash
+#
+# THIS IS THE RESTORE MONGO DB in specific database
+# NOTE:: (--nsInclude=your_database_name)
+# mongorestore --username=your_username --password=your_password --authenticationDatabase=admin --dir=/dump --nsInclude=your_database_name
+
+# scp -r username@your_vps_ip:/path/to/your/mongodump /path/on/local/machine
+# rsync -avz username@your_vps_ip:/path/to/your/mongodump /path/on/local/machine
+# mongosh "mongodb://<your-username>:<your-password>@<your-vps-ip>:<your-mongodb-port>/admin"
+# mongodump --host <your-mongodb-host> --port <your-mongodb-port> --username <your-username> --password <your-password> --out /path/to/dump-directory
+
+# In PC Connect VPS then dump and restore in local
+# mongodump --host /vps_ip --port port_number --out ~/my-dump
+# mongorestore --port 27017 ~/my-dump
