@@ -13,7 +13,7 @@ RUN npm install
 COPY . .
 
 # Set environment variable
-ENV REACT_APP_BACKEND_API=http://localhost:8001
+# ENV REACT_APP_BACKEND_API=http://localhost:8001
 
 # Build the app
 RUN npm run build
