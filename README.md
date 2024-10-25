@@ -26,3 +26,4 @@
 >
 > 1. Select Github Actions from dropdown and press configure
 > 2. Start a commit and merge with main branch (It might show config or not just merge with conflict if any)
+> 3. After successful deployments go to settings and then pages and see your live link
